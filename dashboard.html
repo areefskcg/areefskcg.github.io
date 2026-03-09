@@ -281,6 +281,125 @@
             color: #64748b;
         }
 
+        /* Filterable Table Styles */
+        .filter-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .filter-controls input,
+        .filter-controls select {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: #e4e4e7;
+            font-size: 0.95em;
+            min-width: 150px;
+        }
+
+        .filter-controls input::placeholder {
+            color: #94a3b8;
+        }
+
+        .filter-controls input:focus,
+        .filter-controls select:focus {
+            outline: none;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+        }
+
+        .filter-controls select option {
+            background: #1a1a2e;
+            color: #e4e4e7;
+        }
+
+        .filter-controls label {
+            color: #94a3b8;
+            font-size: 0.9em;
+        }
+
+        .sortable {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .sortable:hover {
+            background: rgba(124, 58, 237, 0.5);
+        }
+
+        .sortable::after {
+            content: ' ⇅';
+            opacity: 0.5;
+        }
+
+        .sortable.asc::after {
+            content: ' ↑';
+            opacity: 1;
+        }
+
+        .sortable.desc::after {
+            content: ' ↓';
+            opacity: 1;
+        }
+
+        .table-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #94a3b8;
+        }
+
+        .record-count {
+            background: rgba(124, 58, 237, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .clear-filters {
+            padding: 8px 16px;
+            background: linear-gradient(90deg, #ef4444, #dc2626);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .clear-filters:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .developer-table-container {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .developer-table-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .developer-table-container::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+        }
+
+        .developer-table-container::-webkit-scrollbar-thumb {
+            background: rgba(124, 58, 237, 0.5);
+            border-radius: 4px;
+        }
+
+        .developer-table-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(124, 58, 237, 0.7);
+        }
+
         @media (max-width: 768px) {
             .charts-container {
                 grid-template-columns: 1fr;
@@ -589,6 +708,56 @@
         </div>
     </div>
 
+    <!-- GEN AI SPOC & SWAT Tagging -->
+    <div class="data-table-section">
+        <h3>🤝 GEN AI SPOC & SWAT Member Tagging</h3>
+        <p style="color: #94a3b8; margin-bottom: 20px;">Each GEN AI SPOC is tagged with a SWAT member for sync meetings and collaboration.</p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>GEN AI SPOC</th>
+                        <th>Email</th>
+                        <th>SWAT Member</th>
+                        <th>SWAT Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kush Anand Adlakha <span style="background: linear-gradient(90deg, #06b6d4, #0891b2); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SPOC</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">kush.anand-adlakha@capgemini.com</td>
+                        <td>Manikandan Jayagopal <span style="background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SWAT</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">manikandan.jayagopal@sap.com</td>
+                    </tr>
+                    <tr>
+                        <td>Thapaswi Kuppam <span style="background: linear-gradient(90deg, #06b6d4, #0891b2); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SPOC</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">thapaswi.kuppam-thapaswi@capgemini.com</td>
+                        <td>Rajneesh Shukla <span style="background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SWAT</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">rajneesh.shukla@sap.com</td>
+                    </tr>
+                    <tr>
+                        <td>Shrraddhas Mishra <span style="background: linear-gradient(90deg, #06b6d4, #0891b2); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SPOC</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">shrraddhas.mishra@capgemini.com</td>
+                        <td>Sunil Choubey <span style="background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SWAT</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">sunil.choubey@sap.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bhavya A Dattey <span style="background: linear-gradient(90deg, #06b6d4, #0891b2); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SPOC</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">bhavya.a.dattey@capgemini.com</td>
+                        <td>Madhuranjan Kumar <span style="background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SWAT</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">madhuranjan.kumar@sap.com</td>
+                    </tr>
+                    <tr>
+                        <td>Shreyash Sanjay Belgaonkar <span style="background: linear-gradient(90deg, #06b6d4, #0891b2); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SPOC</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">shreyash.sanjay-belgaonkar@capgemini.com</td>
+                        <td>Padmanaban T <span style="background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px;">SWAT</span></td>
+                        <td style="color: #94a3b8; font-size: 0.9em;">padmanaban.t@sap.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <!-- License Status Overview -->
     <div class="data-table-section">
         <h3>📋 License Status Overview</h3>
@@ -624,6 +793,181 @@
                 <h4 style="color: #f59e0b;">Adoption Trend</h4>
                 <p style="margin: 10px 0;">Moksha team leads with highest adoption (50-60% improvement) followed by Sprinters (30-40%) and Coders (30%).</p>
             </div>
+        </div>
+    </div>
+
+    <!-- All Developers with GitHub Copilot License -->
+    <div class="data-table-section">
+        <h3>👨‍💻 All Developers with GitHub Copilot License</h3>
+        
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <div>
+                <label>Search:</label>
+                <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="filterTable()">
+            </div>
+            <div>
+                <label>Team:</label>
+                <select id="teamFilter" onchange="filterTable()">
+                    <option value="">All Teams</option>
+                    <option value="Moksha">Moksha</option>
+                    <option value="Sprinters">Sprinters</option>
+                    <option value="Coders">Coders</option>
+                    <option value="Warriors">Warriors</option>
+                    <option value="Heroes">Heroes</option>
+                    <option value="Titans">Titans</option>
+                    <option value="Wizards">Wizards</option>
+                    <option value="Pioneers">Pioneers</option>
+                    <option value="Innovators">Innovators</option>
+                    <option value="Drifters">Drifters</option>
+                    <option value="Crafters">Crafters</option>
+                    <option value="QA">QA</option>
+                    <option value="COE">COE</option>
+                </select>
+            </div>
+            <div>
+                <label>Grade:</label>
+                <select id="gradeFilter" onchange="filterTable()">
+                    <option value="">All Grades</option>
+                    <option value="D2">D2</option>
+                    <option value="C2">C2</option>
+                    <option value="C1">C1</option>
+                    <option value="B2">B2</option>
+                    <option value="B1">B1</option>
+                    <option value="A5">A5</option>
+                    <option value="A4">A4</option>
+                </select>
+            </div>
+            <div>
+                <label>Skill:</label>
+                <select id="skillFilter" onchange="filterTable()">
+                    <option value="">All Skills</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="UI5">UI5</option>
+                    <option value="Testing">Testing</option>
+                </select>
+            </div>
+            <div>
+                <label>Status:</label>
+                <select id="statusFilter" onchange="filterTable()">
+                    <option value="">All Status</option>
+                    <option value="Active">Active</option>
+                    <option value="In Active">Inactive</option>
+                </select>
+            </div>
+            <button class="clear-filters" onclick="clearFilters()">Clear Filters</button>
+        </div>
+
+        <div class="table-info">
+            <span class="record-count">Showing <span id="visibleCount">88</span> of 88 records</span>
+        </div>
+
+        <div class="table-container developer-table-container">
+            <table id="developerTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" onclick="sortTable(0)">S.No</th>
+                        <th class="sortable" onclick="sortTable(1)">Name</th>
+                        <th class="sortable" onclick="sortTable(2)">Team</th>
+                        <th class="sortable" onclick="sortTable(3)">Grade</th>
+                        <th class="sortable" onclick="sortTable(4)">Role</th>
+                        <th class="sortable" onclick="sortTable(5)">Skill Set</th>
+                        <th class="sortable" onclick="sortTable(6)">SAP Status</th>
+                        <th>Champion</th>
+                    </tr>
+                </thead>
+                <tbody id="developerTableBody">
+                    <tr><td>1</td><td>Sunil Choubey</td><td>Moksha</td><td>D2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>2</td><td>Arushi Goel</td><td>Moksha</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-inactive">Inactive</span></td><td></td></tr>
+                    <tr><td>3</td><td>Tarun Kumar Kinnera</td><td>Moksha</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>4</td><td>Ammar Seippu Sheik Mohamed</td><td>Moksha</td><td>B1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>5</td><td>Padmanaban T</td><td>Moksha</td><td>C1</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>6</td><td>Chandrani Mondal</td><td>Moksha</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-inactive">Inactive</span></td><td></td></tr>
+                    <tr><td>7</td><td>Abhijit Thaware</td><td>Moksha</td><td>B2</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>8</td><td>Manikandan Jayagopal</td><td>Sprinters</td><td>D2</td><td>TPO</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>9</td><td>Anitha M</td><td>Sprinters</td><td>C2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>10</td><td>Udit Chauhan</td><td>Sprinters</td><td>B1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>11</td><td>Madhuranjan Kumar</td><td>Sprinters</td><td>C1</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>12</td><td>Diwakar Jaiswal</td><td>Sprinters</td><td>B1</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>13</td><td>Kamalnivasun Selvarasu</td><td>Sprinters</td><td>C2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>14</td><td>Rahul Molwa</td><td>Sprinters</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>15</td><td>Narender Negi</td><td>Coders</td><td>C1</td><td>TPO</td><td>Java</td><td><span class="status-badge status-inactive">Inactive</span></td><td></td></tr>
+                    <tr><td>16</td><td>Prathap Reddy Gulla</td><td>Coders</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>17</td><td>Vishal Sakpal</td><td>Coders</td><td>B1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>18</td><td>Pritom Paul</td><td>Coders</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>19</td><td>Udipta Baruah</td><td>Coders</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>20</td><td>Babli Kumari</td><td>Coders</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>21</td><td>Pankaj Adhikari</td><td>Warriors</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>22</td><td>Imran B Ansari</td><td>Warriors</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-inactive">Inactive</span></td><td></td></tr>
+                    <tr><td>23</td><td>Sumit Surushe</td><td>Warriors</td><td>C1</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-inactive">Inactive</span></td><td></td></tr>
+                    <tr><td>24</td><td>Sahil Salman</td><td>Warriors</td><td>B1</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>25</td><td>Navyashree CR</td><td>Warriors</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>26</td><td>Gouri Sankar T Patro</td><td>Warriors</td><td>C2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>27</td><td>Kapil Gupta</td><td>Heroes</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>28</td><td>Rimjhim</td><td>Heroes</td><td>C1</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>29</td><td>Jagana Sahu</td><td>Heroes</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>30</td><td>Anil Kumar A</td><td>Heroes</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>31</td><td>Manish Kumar</td><td>Heroes</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>32</td><td>Tejanshu Chakole</td><td>Heroes</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>33</td><td>Rachit Arora</td><td>Heroes</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>34</td><td>Udisha Venkat</td><td>Heroes</td><td>A5</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>35</td><td>Abhishek Dolase</td><td>Heroes</td><td>B1</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>36</td><td>Arnab Chakraborty</td><td>Titans</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>37</td><td>Pavan Kumar Reddy</td><td>Titans</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>38</td><td>RUPESH Kumar</td><td>Titans</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>39</td><td>Randeep Singh</td><td>Titans</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>40</td><td>Harshada Ashok Shinde</td><td>Titans</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>41</td><td>Akanksha Shrihari Kulkarni</td><td>Titans</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>42</td><td>Diksha Singh</td><td>Titans</td><td>A5</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>43</td><td>Rohitkumar Chaudhari</td><td>Titans</td><td>B1</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>44</td><td>Janardhana TS</td><td>Titans</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>45</td><td>Shivshankar Malviya</td><td>Wizards</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>46</td><td>Soniya Tripathi</td><td>Innovators</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>47</td><td>Jagadeesh M</td><td>Innovators</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>48</td><td>Rajiv Sen</td><td>Innovators</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>49</td><td>Pavitra Panduranga Patil</td><td>Innovators</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>50</td><td>Utkarsha Uttam Patil</td><td>Innovators</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>51</td><td>Helen Selvi</td><td>Innovators</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>52</td><td>Aman Pratap Singh</td><td>Innovators</td><td>B1</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>53</td><td>Chandrika Prasad</td><td>Pioneers</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>54</td><td>Ravi Prakash</td><td>Pioneers</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>55</td><td>Sree Valli Sarva</td><td>Pioneers</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>56</td><td>Ashish Singh</td><td>Pioneers</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>57</td><td>Mayur Dilip Chaudhari</td><td>Pioneers</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>58</td><td>Akshata Navalgi</td><td>Pioneers</td><td>B1</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>59</td><td>Subhodip Pal</td><td>Pioneers</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>60</td><td>Vivek Morage</td><td>Pioneers</td><td>B2</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>61</td><td>Sudheer Chigurupati</td><td>Drifters</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>62</td><td>Neeraj Ughade</td><td>Drifters</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>63</td><td>Vijaya Kumar Sarode</td><td>Crafters</td><td>C2</td><td>TPO</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>64</td><td>Sujit Madhavan</td><td>Crafters</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>65</td><td>Manmohan Swain</td><td>Crafters</td><td>C1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>66</td><td>Tanya Tripathi</td><td>Wizards</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>67</td><td>Suma N</td><td>Wizards</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>68</td><td>Ramya R</td><td>Wizards</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>69</td><td>J Bharti</td><td>Wizards</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>70</td><td>Suchet Kapoor</td><td>Wizards</td><td>A4</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>71</td><td>Rahul Thakur</td><td>Wizards</td><td>B2</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>72</td><td>Khushi Jain</td><td>Wizards</td><td>A4</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>73</td><td>Nikita Bhamare</td><td>Drifters</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>74</td><td>Ritam Lahiri</td><td>Drifters</td><td>B1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>75</td><td>Priyanka N L</td><td>Drifters</td><td>B2</td><td>Dev</td><td>UI5</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>76</td><td>Poornima Mohite</td><td>Drifters</td><td>B1</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>77</td><td>Ejjipurapu Sai Kumar</td><td>Drifters</td><td>B2</td><td>Dev</td><td>Java</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>78</td><td>Manjula HA</td><td>Drifters</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>79</td><td>Archana Bhimrao Patil</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>80</td><td>Sanjitha T N</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td><span class="champion-badge">Champion</span></td></tr>
+                    <tr><td>81</td><td>K Nirupama</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>82</td><td>Sri Praneeth</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>83</td><td>Annapoorna G R</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>84</td><td>Ravi Melinamani</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>85</td><td>Suhas Ramachandra Inamdar</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>86</td><td>Suruthi Abinaya</td><td>QA</td><td>B2</td><td>QA</td><td>Testing</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>87</td><td>Abhinav Gupta</td><td>COE</td><td>C1</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                    <tr><td>88</td><td>Ratan Pradhan</td><td>COE</td><td>B2</td><td>Dev</td><td>C++</td><td><span class="status-badge status-active">Active</span></td><td></td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -824,6 +1168,117 @@
             el.style.transition = 'all 0.5s ease';
             observer.observe(el);
         });
+
+        // Table Filtering Function
+        function filterTable() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const teamFilter = document.getElementById('teamFilter').value;
+            const gradeFilter = document.getElementById('gradeFilter').value;
+            const skillFilter = document.getElementById('skillFilter').value;
+            const statusFilter = document.getElementById('statusFilter').value;
+            
+            const table = document.getElementById('developerTable');
+            const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+            let visibleCount = 0;
+            
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                const name = cells[1].textContent.toLowerCase();
+                const team = cells[2].textContent;
+                const grade = cells[3].textContent;
+                const skill = cells[5].textContent;
+                const status = cells[6].textContent;
+                
+                let show = true;
+                
+                // Search filter
+                if (searchInput && !name.includes(searchInput)) {
+                    show = false;
+                }
+                
+                // Team filter
+                if (teamFilter && team !== teamFilter) {
+                    show = false;
+                }
+                
+                // Grade filter
+                if (gradeFilter && grade !== gradeFilter) {
+                    show = false;
+                }
+                
+                // Skill filter
+                if (skillFilter && !skill.includes(skillFilter)) {
+                    show = false;
+                }
+                
+                // Status filter
+                if (statusFilter) {
+                    if (statusFilter === 'Active' && !status.includes('Active')) {
+                        show = false;
+                    } else if (statusFilter === 'In Active' && !status.includes('Inactive')) {
+                        show = false;
+                    }
+                }
+                
+                rows[i].style.display = show ? '' : 'none';
+                if (show) visibleCount++;
+            }
+            
+            document.getElementById('visibleCount').textContent = visibleCount;
+        }
+        
+        // Clear all filters
+        function clearFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('teamFilter').value = '';
+            document.getElementById('gradeFilter').value = '';
+            document.getElementById('skillFilter').value = '';
+            document.getElementById('statusFilter').value = '';
+            filterTable();
+        }
+        
+        // Table Sorting Function
+        let sortDirection = {};
+        
+        function sortTable(columnIndex) {
+            const table = document.getElementById('developerTable');
+            const tbody = table.getElementsByTagName('tbody')[0];
+            const rows = Array.from(tbody.getElementsByTagName('tr'));
+            const headers = table.getElementsByTagName('th');
+            
+            // Toggle sort direction
+            sortDirection[columnIndex] = sortDirection[columnIndex] === 'asc' ? 'desc' : 'asc';
+            
+            // Update header classes
+            for (let i = 0; i < headers.length; i++) {
+                headers[i].classList.remove('asc', 'desc');
+            }
+            headers[columnIndex].classList.add(sortDirection[columnIndex]);
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                let aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
+                let bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
+                
+                // Check if numeric
+                if (!isNaN(aValue) && !isNaN(bValue)) {
+                    aValue = parseFloat(aValue);
+                    bValue = parseFloat(bValue);
+                } else {
+                    aValue = aValue.toLowerCase();
+                    bValue = bValue.toLowerCase();
+                }
+                
+                if (sortDirection[columnIndex] === 'asc') {
+                    return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+                } else {
+                    return aValue < bValue ? 1 : aValue > bValue ? -1 : 0;
+                }
+            });
+            
+            // Re-append sorted rows
+            rows.forEach(row => tbody.appendChild(row));
+        }
     </script>
 </body>
 </html>
