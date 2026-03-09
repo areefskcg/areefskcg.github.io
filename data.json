@@ -1,0 +1,4449 @@
+{
+  "Copilot license Summary": {
+    "columns": [
+      "Status",
+      "(blank)"
+    ],
+    "shape": [
+      15,
+      2
+    ],
+    "data": [
+      {
+        "Status": "Row Labels",
+        "(blank)": "Count of Name"
+      },
+      {
+        "Status": "COE",
+        "(blank)": 1
+      },
+      {
+        "Status": "Drifters",
+        "(blank)": 2
+      },
+      {
+        "Status": "Crafters",
+        "(blank)": 3
+      },
+      {
+        "Status": "Warriors",
+        "(blank)": 6
+      },
+      {
+        "Status": "Innovators",
+        "(blank)": 7
+      },
+      {
+        "Status": "Coders",
+        "(blank)": 7
+      },
+      {
+        "Status": "Pioneers",
+        "(blank)": 8
+      },
+      {
+        "Status": "QA",
+        "(blank)": 8
+      },
+      {
+        "Status": "Sprinters",
+        "(blank)": 8
+      },
+      {
+        "Status": "Titans",
+        "(blank)": 9
+      },
+      {
+        "Status": "Wizards",
+        "(blank)": 9
+      },
+      {
+        "Status": "Heroes",
+        "(blank)": 9
+      },
+      {
+        "Status": "Moksha",
+        "(blank)": 11
+      },
+      {
+        "Status": "Grand Total",
+        "(blank)": 88
+      }
+    ]
+  },
+  "Copilot license": {
+    "columns": [
+      "Toft",
+      "Name",
+      "Cuser ID",
+      "Grade",
+      "Role",
+      "Skill Set",
+      "Date request raised",
+      "Status for Access",
+      "Gen AI Champion",
+      "Status",
+      "SAP ID",
+      "Active/Inactve in SAP B1 Wings",
+      "LWD",
+      "Resource Name",
+      "Grade.1",
+      "Unnamed: 15"
+    ],
+    "shape": [
+      113,
+      16
+    ],
+    "data": [
+      {
+        "Toft": "Moksha",
+        "Name": "Sunil Choubey",
+        "Cuser ID": "C5391372",
+        "Grade": "D2",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-03 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sunil.choubey@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sunil Choubey",
+        "Grade.1": "D2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Arushi Goel",
+        "Cuser ID": "C5392391",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "arushi.goel@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Archana Bhimrao Patil",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Tarun Kumar Kinnera",
+        "Cuser ID": "C5392098",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "Yes",
+        "Status": "",
+        "SAP ID": "kumar.tarun.kinnera@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Arushi Goel",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Ammar Seippu Sheik Mohamed",
+        "Cuser ID": "C5347846",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ammar.seippu.sheik.mohamed@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Tarun Kumar Kinnera",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Padmanaban T",
+        "Cuser ID": "C5393257",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "padmanaban.t@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Khushi Jain",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Lalita Babaso Khatal",
+        "Cuser ID": "C5393102",
+        "Grade": "",
+        "Role": "",
+        "Skill Set": "",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "lalita.babaso.khatal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Maternity Leave",
+        "LWD": "2025-06-30 00:00:00",
+        "Resource Name": "Padmanaban T",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Chandrani Modal",
+        "Cuser ID": "C5396764",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "chandrani.mondal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Abhijit Thaware",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Abhijit Thaware",
+        "Cuser ID": "C5392110",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "Yes",
+        "Status": "",
+        "SAP ID": "abhijit.thaware@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Manikandan Jayagopal",
+        "Grade.1": "D2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Manikandan Jayagopal",
+        "Cuser ID": "C5392069",
+        "Grade": "D2",
+        "Role": "TPO",
+        "Skill Set": "C++",
+        "Date request raised": "2025-04-03 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "manikandan.jayagopal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Anitha M",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Anitha M",
+        "Cuser ID": "C5392064",
+        "Grade": "C2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "anitha.m05@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Udit Chauhan",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Suresh KM",
+        "Cuser ID": "C5392099",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "suresh.km@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-09-05 00:00:00",
+        "Resource Name": "Madhuranjan Kumar",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Udit Chauhan",
+        "Cuser ID": "C5392689",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "Yes",
+        "Status": "",
+        "SAP ID": "udit.chauhan@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Diwakar Jaiswal",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Madhuranjan Kumar",
+        "Cuser ID": "C5392082",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "madhuranjan.kumar@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Gouri Sankar T Patro",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Diwakar Jaiswal",
+        "Cuser ID": "C5392309",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "diwakar.jaiswal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Imran B Ansari",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Narender Negi",
+        "Cuser ID": "C5392195",
+        "Grade": "C1",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "narender.negi@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Navyashree CR",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Prathap Reddy Gulla",
+        "Cuser ID": "C5392079",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "gulla.prathap.reddy@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Tanya Tripati",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Vishal Sakpal",
+        "Cuser ID": "C5392355",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vishal.sakpal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Suchet Kapoor",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Pritom Paul",
+        "Cuser ID": "C5392101",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "Yes",
+        "Status": "",
+        "SAP ID": "pritom.paul@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sumit Surushe",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Sanjeet Jha ",
+        "Cuser ID": "C5397514",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "",
+        "Date request raised": "2025-04-14 00:00:00",
+        "Status for Access": "",
+        "Gen AI Champion": "",
+        "Status": "Revoked",
+        "SAP ID": "sanjeet.jha@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-07-22 00:00:00",
+        "Resource Name": "Narender Negi",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Kapil Gupta",
+        "Cuser ID": "C5392165",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-04-16 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "kapil.gupta04@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "PRATHAP REDDY GULLA",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Imran B Ansari",
+        "Cuser ID": "C5393258",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "imran.ansari@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Pritom Paul",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Sumit Surushe",
+        "Cuser ID": "C5392077",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "sumit.surushe@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-09-11 00:00:00",
+        "Resource Name": "Vishal Sakpal",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Sahil Salman",
+        "Cuser ID": "C5392603",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "Gen AI Champion": "",
+        "Status": "Revoked",
+        "SAP ID": "sahil.salman@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-08-01 00:00:00",
+        "Resource Name": "Bharti J",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Drifters",
+        "Name": "Sudheer Chigurupati",
+        "Cuser ID": "C5392352",
+        "Grade": "",
+        "Role": "",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "sudheer.chigurupati@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-07-18 00:00:00",
+        "Resource Name": "Udipta Baruah",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Drifters",
+        "Name": "Neeraj Ughade",
+        "Cuser ID": "C5392052",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "n.ughade@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Manjula H A",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Drifters",
+        "Name": "Sai Kumar Ejjipurapu",
+        "Cuser ID": "C5392135",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sai.kumar.ejjipurapu@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Priyanka N L",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Vijaya Kumar Sarode",
+        "Cuser ID": "C5393188",
+        "Grade": "D1",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vijaya.kumar.sarode@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Neeraj Ughade",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Sujit Madhavan Karatparambil",
+        "Cuser ID": "C5397702",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "Gen AI Champion": "",
+        "Status": "Revoked",
+        "SAP ID": "sujit.karatparambil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-07-11 00:00:00",
+        "Resource Name": "SAI KUMAR EJJIPURAPU",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Jagadeesh M",
+        "Cuser ID": "C5358273",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "jagadeesh.m@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Poornima Mohite",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Rajiv Sen",
+        "Cuser ID": "C5392118",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rajiv.sen@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Abhinav Gupta",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Aman Pratap Singh",
+        "Cuser ID": "C5392140",
+        "Grade": "",
+        "Role": "",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "aman.pratap.singh@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-07-22 00:00:00",
+        "Resource Name": "Vijaya Kumar Sarode",
+        "Grade.1": "D1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Chandrika Prasad",
+        "Cuser ID": "C5392212",
+        "Grade": "C2",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "chandrika.prasad@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sri Praneeth Popuri Eswar Durga",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Ravi Prakash",
+        "Cuser ID": "C5392172",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "Gen AI Champion": "",
+        "Status": "Revoked",
+        "SAP ID": "ravi.prakash09@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-07-25 00:00:00",
+        "Resource Name": "Eluri Bhulakshmi",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Subhodip Pal",
+        "Cuser ID": "C5392105",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "subhodip.pal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ashlesha Ajay Patil",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "RUPESH Kumar",
+        "Cuser ID": "C5392108",
+        "Grade": "",
+        "Role": "",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "To be revoked",
+        "SAP ID": "rupesh.kumar05@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-08-22 00:00:00",
+        "Resource Name": "Akshay Krushnrao Ghogare",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Randeep Singh",
+        "Cuser ID": "C5392167",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "randeep.singh05@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Soniya Tripathi",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Harshada Ashok Shinde",
+        "Cuser ID": "C5392163",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "harshada.ashok.shinde@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Annapoorna G R",
+        "Grade.1": "B2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Rimjhim",
+        "Cuser ID": "C5392058",
+        "Grade": "C1",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rimjhim.rimjhim@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Akash Kumar Prasad",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Tejanshu Chakole",
+        "Cuser ID": "C5388330",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "tejanshu.chakole@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Rajiv Sen",
+        "Grade.1": "B2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Rachit Arora",
+        "Cuser ID": "C5392199",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rachit.arora@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Utkarsha Uttam Patil",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Dilip Mayur Chaudhari",
+        "Cuser ID": "C5392152",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "mayur.dilip.chaudhari01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Pavitra Panduranga Patil",
+        "Grade.1": "A4",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Tanya Tripati",
+        "Cuser ID": "C5392158",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "t.tripathi@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Jagadeesh M",
+        "Grade.1": "C1",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Pavitra Panduranga Patil",
+        "Cuser ID": "C5392161",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "pavitra.pandurang.patil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Rahul Thakur",
+        "Grade.1": "B2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Ashlesha Ajay Patil",
+        "Cuser ID": "C5392162",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ashlesha.ajay.patil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Chandrika Prasad",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "QA",
+        "Name": "Gouri Sankar T Patro",
+        "Cuser ID": "C5392073",
+        "Grade": "C2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "gouri.sankar.patro.t@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ravi Melinamani",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Suhas Ramachandra Inamdar",
+        "Cuser ID": "C5392204",
+        "Grade": "C2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "suhas.ramachandra.inamdar@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ashish Singh",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Manjula H A",
+        "Cuser ID": "C5392389",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "manjula.ha@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Subhodip Pal",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Sri Praneeth Popuri Eswar Durga",
+        "Cuser ID": "C5392259",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sri.praneeth.popuri.eswar.durga@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Dilip Mayur Chaudhari",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Rajneesh Shukla",
+        "Cuser ID": "C5383744",
+        "Grade": "",
+        "Role": "TPO",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rajneesh.shukla@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Vivek Vamanrao Morage",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "COE",
+        "Name": "Areef Shaik\n",
+        "Cuser ID": "C5400269",
+        "Grade": "C1",
+        "Role": "",
+        "Skill Set": "Gen AI",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "areef.shaik01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Suhas Ramachandra Inamdar",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Valli Shanmugananthan",
+        "Cuser ID": "C5376490",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "valli.ayswaria.shanmuganathan@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Shruthilaya K",
+        "Grade.1": "A5",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Sai Gowtham",
+        "Cuser ID": "C5377923",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "metla.sai.gowtham@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Randeep Singh",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Abhishek Dolase",
+        "Cuser ID": "C5393256",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "abhishek.dolase@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Harshada Ashok Shinde",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Bharti J",
+        "Cuser ID": "C5392155",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "bharti.j01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Diksha Singh",
+        "Grade.1": "B1",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Udipta Baruah",
+        "Cuser ID": "C5392076",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "udipta.baruah@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "pra",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Archana Bhimrao Patil",
+        "Cuser ID": "C5392131",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "archana.bhimrao.patil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Rimjhim",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Prabhat .",
+        "Cuser ID": "C5392387",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "2025-08-11 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "prabhat.upadhyay@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Abinaya Suruthi Muthuraja",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Nuzhat Sultana",
+        "Cuser ID": "C5400708",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Gen AI",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "nuzhat.sultana@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Rachit Arora",
+        "Grade.1": "B1",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Anil Kumar A",
+        "Cuser ID": "C5393018",
+        "Grade": "C2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "anil.kumar.a@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Jagana Sahu",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Udisha Venkat",
+        "Cuser ID": "C5392177",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "udisha.venkat@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Anil Kumar A",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Manish Kumar",
+        "Cuser ID": "C5392102",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "manish.kumar35@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Manish Kumar",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Helen Selvi",
+        "Cuser ID": "C5388379",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "helen.selvi.a@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Kapil Gupta",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Deep Choudhury",
+        "Cuser ID": "C5398237",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "deep.choudhury@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Udisha Venkat",
+        "Grade.1": "A4",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Shilpa Khare",
+        "Cuser ID": "C5401918",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "shilpa.khare@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Tejanshu Chakole",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Naru, Venkata Kavya",
+        "Cuser ID": "C5398238",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "kavya.venkata.naru@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ramesh V.C",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Manasa Rayan",
+        "Cuser ID": "C5376607",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-13 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "manasa.c.rayan@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Srihari Naramsetty",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Vikas CB",
+        "Cuser ID": "C5376495",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vikas.c.b@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Manisha Sanduja",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Abhilash Mishra",
+        "Cuser ID": "C5376491",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "abhilash.mishra@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Xi Yang",
+        "Grade.1": "China",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Jitendra Kumar Agarwal",
+        "Cuser ID": "C5376393",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-11 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "jitendra.kumar.agrawal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Padmini Chammoth Sivaraman",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Mohana Priya R",
+        "Cuser ID": "C5384652",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "mohana.priya.ramalingam@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Naresh Goud Battikadi",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Kumar Sahoo, Ajit",
+        "Cuser ID": "C5384694",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ajit.sahoo03@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sumanthu Sundaresan",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Charan Raj",
+        "Cuser ID": "C5387270",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "charan.raj@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Trinath Sahu",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Diksha Singh",
+        "Cuser ID": "C5392178",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "diksha.singh02@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Bipin Kumar",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Shruthilaya K",
+        "Cuser ID": "C5392139",
+        "Grade": "A5",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-11 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "shruthilaya.k@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Prashanth Prakash",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Situparna Panda",
+        "Cuser ID": "C5376489",
+        "Grade": "",
+        "Role": "TPO",
+        "Skill Set": "",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "situparna.panda@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sunitha Vasudevan",
+        "Grade.1": "E1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Poornima Mohite",
+        "Cuser ID": "C5379549",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "poornima.mohite@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Shwetha C",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Priyanka Ghosh",
+        "Cuser ID": "C5400448",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "priyanka.ghosh@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Meenakshi Akhlesh Rai",
+        "Grade.1": "D1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Ashish Singh",
+        "Cuser ID": "C5392130",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ashish.singh16@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sanjitha T N",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Vivek Vamanrao Morage",
+        "Cuser ID": "C5393255",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vivek.vamanrao.morage@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ammar Seippu Sheik Mohamed",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Polani Nagatejesh",
+        "Cuser ID": "C5401649",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "polani.nagatejesh@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Srujana Uppala",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Navya Sree, Malidevi",
+        "Cuser ID": "C5398502",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "malidevi.navya.sree@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sravanthi Khammammettu",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Baddila Sai Kiran Chowdary",
+        "Cuser ID": "C5401927",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "baddila.sai.kiran.chowdary@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Shruti Angadi\u00a0",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Sayan Mandal",
+        "Cuser ID": "C5396105",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sayan.mandal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Srikanth Yeddu",
+        "Grade.1": "A4",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Vikhyath P",
+        "Cuser ID": "C5400373",
+        "Grade": "B1",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vikhyath.p@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Nikita Bhamare",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Osama MD",
+        "Cuser ID": "C5395887",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "osama.md@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sreeja Jetla",
+        "Grade.1": "A4",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Navyashree CR",
+        "Cuser ID": "C5392112",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "navyashree.cr@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Prabhat .",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Kavya R",
+        "Cuser ID": "C5395890",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "kavya.r04@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Janardhana Ts",
+        "Grade.1": "B2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Dappu Lakshman",
+        "Cuser ID": "C5396638",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "dappu.lakshman@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sai Ram Subodh Varma Datla",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Suchet Kapoor",
+        "Cuser ID": "C5393260",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "2025-08-06 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "suchet.kapoor@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Anubha Singh",
+        "Grade.1": "A4",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Sreejith Sukumaran",
+        "Cuser ID": "C5396586",
+        "Grade": "C2",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-08-07 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sreejith.sukumaran@sap.com",
+        "Active/Inactve in SAP B1 Wings": "In Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Abhishek Dolase",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Ravi Melinamani",
+        "Cuser ID": "C5392171",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ravi.melinamani@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Nandini R",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "QA",
+        "Name": "Annapoorna G R",
+        "Cuser ID": "C5392388",
+        "Grade": "B2",
+        "Role": "Tester",
+        "Skill Set": "Automation Tester",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "annapoorna.gr@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Diwakar Verma",
+        "Grade.1": "D1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Sprinters",
+        "Name": "Devendra Shukla",
+        "Cuser ID": "C5400790",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "devendra.shukla@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Ashwini S",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "UA",
+        "Name": "Ganga Krishnakumar",
+        "Cuser ID": "C5401098",
+        "Grade": "",
+        "Role": "UA",
+        "Skill Set": "UA",
+        "Date request raised": "2025-09-25 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ganga.krishnakumar@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sadanand Keeliputti",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Pankhudi Singh",
+        "Cuser ID": "C5402563",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-10-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "pankhudi.singh@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Balaram Bera",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titan",
+        "Name": "Supriya Pasupaleti",
+        "Cuser ID": "C5399286",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-10-05 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "supriya.pasupuleti@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sreejith Sukumaran",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "UA",
+        "Name": "Nishanth KP",
+        "Cuser ID": "C5400811",
+        "Grade": "",
+        "Role": "UA",
+        "Skill Set": "UA",
+        "Date request raised": "2025-09-25 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "n.karunakaran.palayadi@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Akshata Navalgi",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Arpita Vasant Raut",
+        "Cuser ID": "C5396104",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-10-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "arpita.vasant.raut@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sumit Majumdar",
+        "Grade.1": "B2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Khushi Jain",
+        "Cuser ID": "C5392156",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "2025-10-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "khushi.jain01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Dappu Lakshman",
+        "Grade.1": "C1",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Priyanka N L",
+        "Cuser ID": "C5392061",
+        "Grade": "C1",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "2025-10-08 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "priyanka.n.l@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Chandrani Modal",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Titans",
+        "Name": "Rohitkumar",
+        "Cuser ID": "C5393254",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "2025-10-23 00:00:00",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rohitkumar.chaudhari@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Helen Selvi",
+        "Grade.1": "C1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Eluri Bhulakshmi",
+        "Cuser ID": "C5392132",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "eluri.bhulakshmi@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Charan Raj",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Balaram Bera",
+        "Cuser ID": "C5396106",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "balaram.bera@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Sruthi R",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Sruthi R",
+        "Cuser ID": "C5398951",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sruthi.r@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Tushar Panchal",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Heroes",
+        "Name": "Anubha Singh",
+        "Cuser ID": "C5392149",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "anubha.singh01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Pradeep Tanwar",
+        "Grade.1": "C2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Utkarsha Uttam Patil",
+        "Cuser ID": "C5392159",
+        "Grade": "A4",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "utkarsha.uttam.patil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Unnikrishnan M B",
+        "Grade.1": "D2",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Coders",
+        "Name": "Dharani Kunapareddy ",
+        "Cuser ID": "C5395889",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "dharani.kunapareddy@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Areef Shaik\n",
+        "Grade.1": "C1",
+        "Unnamed: 15": "YP"
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Thirumalraj .",
+        "Cuser ID": "C5400458",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "Java",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "thirumalraj.thirumalraj@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Vanitha LT",
+        "Grade.1": "B2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Innovators",
+        "Name": "Rahul Thakur",
+        "Cuser ID": "C5392173",
+        "Grade": "B2",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "rahul.thakur01@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "Vikhyath P",
+        "Grade.1": "B1",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Crafters",
+        "Name": "Hemantha DB",
+        "Cuser ID": "C5407301",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "UI",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "hemantha.db@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "2025-12-31 00:00:00",
+        "Resource Name": "RANGANATHA D",
+        "Grade.1": "C2",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Moksha",
+        "Name": "Vijay Sakpal",
+        "Cuser ID": "C5409724",
+        "Grade": "",
+        "Role": "",
+        "Skill Set": "",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "vijay.sapkal@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "NaT",
+        "Resource Name": "Osama MD",
+        "Grade.1": "A4",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Coders",
+        "Name": "ASHISH ANNASO PATIL",
+        "Cuser ID": "C5401346",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "C++",
+        "Date request raised": "NaT",
+        "Status for Access": "Co-Pilot integrated",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "ashish.annaso.patil@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "NaT",
+        "Resource Name": "",
+        "Grade.1": "",
+        "Unnamed: 15": ""
+      },
+      {
+        "Toft": "Pioneers",
+        "Name": "Sumit Mujumdar",
+        "Cuser ID": "C5408283",
+        "Grade": "",
+        "Role": "Dev",
+        "Skill Set": "UI5",
+        "Date request raised": "NaT",
+        "Status for Access": "Request raised",
+        "Gen AI Champion": "",
+        "Status": "",
+        "SAP ID": "sumit.mujumdar@sap.com",
+        "Active/Inactve in SAP B1 Wings": "Active",
+        "LWD": "NaT",
+        "Resource Name": "",
+        "Grade.1": "",
+        "Unnamed: 15": ""
+      }
+    ]
+  },
+  "Copilot license pending": {
+    "columns": [
+      "Toft",
+      "Name",
+      "Cuser ID",
+      "Role",
+      "Skillset",
+      "Date request raised",
+      "Status for Access",
+      "SAP ID",
+      "Unnamed: 10"
+    ],
+    "shape": [
+      18,
+      9
+    ],
+    "data": [
+      {
+        "Toft": "PM",
+        "Name": "Tushar ",
+        "Cuser ID": "C5399595",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-05 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "tushar.deepak.panchal@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "PM",
+        "Name": "Pradeep Tanwar",
+        "Cuser ID": "C5402780",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-06 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "pradeep.tanwar@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "PM",
+        "Name": "Unnikrishnan",
+        "Cuser ID": "C5402537",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-06 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "unnikrishnan.m.b@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "PM",
+        "Name": "Ranganatha",
+        "Cuser ID": "C5400812",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Registration failure",
+        "SAP ID": "ranganatha.d.m@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "PM",
+        "Name": "Auditya",
+        "Cuser ID": "C5401893",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "auditya.mittapalli@sap.com",
+        "Unnamed: 10": "Mail not received"
+      },
+      {
+        "Toft": "PM",
+        "Name": "Srihari",
+        "Cuser ID": "C5392148",
+        "Role": "Product Manager",
+        "Skillset": "PM",
+        "Date request raised": "2025-08-08 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "s.naramsetty@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "Wizards",
+        "Name": "Pramit Ranjan",
+        "Cuser ID": "C5384708",
+        "Role": "Dev",
+        "Skillset": "Java",
+        "Date request raised": "2025-11-11 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "pramit.ranjan.behera@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "Warriors",
+        "Name": "Abhinav Gupta",
+        "Cuser ID": "C5392056",
+        "Role": "Dev",
+        "Skillset": "C++",
+        "Date request raised": "2025-11-26 00:00:00",
+        "Status for Access": "Registration done",
+        "SAP ID": "abhinav.gupta05@sap.com",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Jagana Sahu",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Vanitha LT",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Swathi Gudigandla",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Haritha Ponanna",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Sushma Sangamesh",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Preeti Y Umathar",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Manasa J",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Sumit Mujumdar",
+        "Cuser ID": "Need to raise",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Shahbaz Alvi",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Toft": "",
+        "Name": "Simran",
+        "Cuser ID": "",
+        "Role": "",
+        "Skillset": "",
+        "Date request raised": "NaT",
+        "Status for Access": "",
+        "SAP ID": "",
+        "Unnamed: 10": ""
+      }
+    ]
+  },
+  "Grade": {
+    "columns": [
+      "Resource Name",
+      "Grade"
+    ],
+    "shape": [
+      178,
+      2
+    ],
+    "data": [
+      {
+        "Resource Name": "Sunil Choubey",
+        "Grade": "D2"
+      },
+      {
+        "Resource Name": "Archana Bhimrao Patil",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Arushi Goel",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Tarun Kumar Kinnera",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Khushi Jain",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Padmanaban T",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Abhijit Thaware",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Manikandan Jayagopal",
+        "Grade": "D2"
+      },
+      {
+        "Resource Name": "Anitha M",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Udit Chauhan",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Madhuranjan Kumar",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Diwakar Jaiswal",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Gouri Sankar T Patro",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Imran B Ansari",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Navyashree CR",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Tanya Tripati",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Suchet Kapoor",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Sumit Surushe",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Narender Negi",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "PRATHAP REDDY GULLA",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Pritom Paul",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Vishal Sakpal",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Bharti J",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Udipta Baruah",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Manjula H A",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Priyanka N L",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Neeraj Ughade",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "SAI KUMAR EJJIPURAPU",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Poornima Mohite",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Abhinav Gupta",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Vijaya Kumar Sarode",
+        "Grade": "D1"
+      },
+      {
+        "Resource Name": "Sri Praneeth Popuri Eswar Durga",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Eluri Bhulakshmi",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Ashlesha Ajay Patil",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Akshay Krushnrao Ghogare",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Soniya Tripathi",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Annapoorna G R",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Akash Kumar Prasad",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Rajiv Sen",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Utkarsha Uttam Patil",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Pavitra Panduranga Patil",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Jagadeesh M",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Rahul Thakur",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Chandrika Prasad",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Ravi Melinamani",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Ashish Singh",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Subhodip Pal",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Dilip Mayur Chaudhari",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Vivek Vamanrao Morage",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Suhas Ramachandra Inamdar",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Shruthilaya K",
+        "Grade": "A5"
+      },
+      {
+        "Resource Name": "Randeep Singh",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Harshada Ashok Shinde",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Diksha Singh",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "pra",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Rimjhim",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Abinaya Suruthi Muthuraja",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Rachit Arora",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Jagana Sahu",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Anil Kumar A",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Manish Kumar",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Kapil Gupta",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Udisha Venkat",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Tejanshu Chakole",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Ramesh V.C",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Srihari Naramsetty",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Manisha Sanduja",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Xi Yang",
+        "Grade": "China"
+      },
+      {
+        "Resource Name": "Padmini Chammoth Sivaraman",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Naresh Goud Battikadi",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Sumanthu Sundaresan",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Trinath Sahu",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Bipin Kumar",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Prashanth Prakash",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Sunitha Vasudevan",
+        "Grade": "E1"
+      },
+      {
+        "Resource Name": "Shwetha C",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Meenakshi Akhlesh Rai",
+        "Grade": "D1"
+      },
+      {
+        "Resource Name": "Sanjitha T N",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Ammar Seippu Sheik Mohamed",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Srujana Uppala",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sravanthi Khammammettu",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Shruti Angadi\u00a0",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Srikanth Yeddu",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Nikita Bhamare",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Sreeja Jetla",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Prabhat .",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Janardhana Ts",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sai Ram Subodh Varma Datla",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Anubha Singh",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Abhishek Dolase",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Nandini R",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Diwakar Verma",
+        "Grade": "D1"
+      },
+      {
+        "Resource Name": "Ashwini S",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sadanand Keeliputti",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Balaram Bera",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sreejith Sukumaran",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Akshata Navalgi",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Sumit Majumdar",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Dappu Lakshman",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Chandrani Modal",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Helen Selvi",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Charan Raj",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sruthi R",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Tushar Panchal",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Pradeep Tanwar",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Unnikrishnan M B",
+        "Grade": "D2"
+      },
+      {
+        "Resource Name": "Areef Shaik\n",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Vanitha LT",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Vikhyath P",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "RANGANATHA D",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Osama MD",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Dharani Kunapareddy ",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Sayan Mandal",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Kavya R",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Arpita Vasant Raut",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Kamalnivasun Selvarasu",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Supriya Pasupaleti",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Haritha Ponanna",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Navya Sree, Malidevi",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Naru, Venkata Kavya",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Harshal Bhupendra Jain",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Deep Choudhury",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "N, Thanushree",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Pravat Kumar Swain",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Nuzhat Sultana",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Sweety Sahu",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Latifunnisa",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Farhan, Alfiya",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Sri Gopika",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Polani Nagatejesh",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Thirumalraj .",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Priyanka Ghosh",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Viraj Vasaikar",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Auditya Mittapalli",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Swathi, Gudigandla",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Chitukula Rajashekhar Reddy",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Swathi, Muppa",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Madhumitha, Kurapati",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Nitika ",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Devendra Shukla",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Shilpa Khare",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Sushma Sangamesh",
+        "Grade": "A5"
+      },
+      {
+        "Resource Name": "Preeti Y Umathar",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Nishanth KP",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Manasa J",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Ganga Krishnakumar",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Abhilash Mishra",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Vikas CB",
+        "Grade": "B1"
+      },
+      {
+        "Resource Name": "Manasa Rayan",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sai Gowtham",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Jitendra Kumar Agarwal",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Situparna Panda",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Valli Shanmugananthan",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Kumar Sahoo, Ajit",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Ranjan Behera, Pramit",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Rajneesh Shukla",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Mohana Priya R",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "ASHISH ANNASO PATIL",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Supriya Gona",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Pankhudi Singh",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Baddila Sai Kiran Chowdary",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Sravani Bestha",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Hemantha DB",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Tejaswini Pasupula",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Sujit Ahir / replacement",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Rajesh Kumar",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Sumanthu Sundaresan",
+        "Grade": "C2"
+      },
+      {
+        "Resource Name": "Vijay Sakpal",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Nagulagari Nagarani",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "VANIPENTA S KRISHNA REDDY",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Tavva Naveen Kumar",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Prity Kumari ",
+        "Grade": "C1"
+      },
+      {
+        "Resource Name": "Replacement for Nandini",
+        "Grade": "B2"
+      },
+      {
+        "Resource Name": "Shruthilaya K",
+        "Grade": "A5"
+      },
+      {
+        "Resource Name": "Anubha Singh",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "N, Thanushree",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Latifunnisa",
+        "Grade": "A4"
+      },
+      {
+        "Resource Name": "Ashlesha Ajay Patil",
+        "Grade": "A4"
+      }
+    ]
+  },
+  "Team-wise Copilot license": {
+    "columns": [
+      "Copilot installed",
+      "Copilot requested",
+      "Coplit to be requested",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10"
+    ],
+    "shape": [
+      20,
+      11
+    ],
+    "data": [
+      {
+        "Copilot installed": "Role / Toft Name",
+        "Copilot requested": "Moksha",
+        "Coplit to be requested": "Sprinters",
+        "Unnamed: 3": "Warriors",
+        "Unnamed: 4": "Coders",
+        "Unnamed: 5": "Drifters",
+        "Unnamed: 6": "Crafters",
+        "Unnamed: 7": "Innovators",
+        "Unnamed: 8": "Pioneers",
+        "Unnamed: 9": "Titans",
+        "Unnamed: 10": "Heroes"
+      },
+      {
+        "Copilot installed": "",
+        "Copilot requested": "Toft 1",
+        "Coplit to be requested": "Toft 2",
+        "Unnamed: 3": "Toft 3",
+        "Unnamed: 4": "Toft 4",
+        "Unnamed: 5": "Toft 5",
+        "Unnamed: 6": "Toft 6",
+        "Unnamed: 7": "Toft 7",
+        "Unnamed: 8": "Toft 8",
+        "Unnamed: 9": "Toft 9",
+        "Unnamed: 10": "Toft 10"
+      },
+      {
+        "Copilot installed": "Architect/TPO",
+        "Copilot requested": "Sunil Choubey ",
+        "Coplit to be requested": "Manikandan Jayagopal",
+        "Unnamed: 3": "Pankaj Adhikari",
+        "Unnamed: 4": "Narender Negi",
+        "Unnamed: 5": "Sudheer Chigurupati",
+        "Unnamed: 6": "Vijaya Kumar Sarode",
+        "Unnamed: 7": "Soniya Tripathi",
+        "Unnamed: 8": "Chandrika Prasad",
+        "Unnamed: 9": "Arnab chakraborty",
+        "Unnamed: 10": "Rimjhim"
+      },
+      {
+        "Copilot installed": "Senior Java Developer",
+        "Copilot requested": "Arushi Goel",
+        "Coplit to be requested": "Anitha M",
+        "Unnamed: 3": "Malathi",
+        "Unnamed: 4": "Gulla Reddy",
+        "Unnamed: 5": "Neeraj Ughade",
+        "Unnamed: 6": "Sujit Madhavan",
+        "Unnamed: 7": "Shivshankar Malviya",
+        "Unnamed: 8": "Ravi Prakash",
+        "Unnamed: 9": "Pavan Kumar Reddy",
+        "Unnamed: 10": "Jagana Sahu"
+      },
+      {
+        "Copilot installed": "Senior Java Developer",
+        "Copilot requested": "Sanjeet Jha",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "Imran B Ansari",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "Ritam Lahiri",
+        "Unnamed: 6": "Manmohan Swain",
+        "Unnamed: 7": "Jagadeesh M",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "",
+        "Unnamed: 10": "Anil Kumar A"
+      },
+      {
+        "Copilot installed": "Java Developer",
+        "Copilot requested": "Tarun Kinnera",
+        "Coplit to be requested": "KM Suresh",
+        "Unnamed: 3": "Navyashree CR",
+        "Unnamed: 4": "Pritom Paul",
+        "Unnamed: 5": "Nikita Bhamare",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "Rajiv Sen",
+        "Unnamed: 8": "Sree Valli Sarva",
+        "Unnamed: 9": "RUPESH Kumar",
+        "Unnamed: 10": "Manish Kumar"
+      },
+      {
+        "Copilot installed": "Java Developer",
+        "Copilot requested": "Suma N",
+        "Coplit to be requested": "Ramya R",
+        "Unnamed: 3": "Tanya Tripati",
+        "Unnamed: 4": "Vishal Sakpal",
+        "Unnamed: 5": "Ejjipurapu Sai Kumar",
+        "Unnamed: 6": "Ashlesha Ajay Patil",
+        "Unnamed: 7": "Pavitra Panduranga Patil",
+        "Unnamed: 8": "Ashish Singh",
+        "Unnamed: 9": "Randeep Singh",
+        "Unnamed: 10": "Kapil Gupta"
+      },
+      {
+        "Copilot installed": "Java Developer",
+        "Copilot requested": "Ammar Seippu Sheik Mohamed",
+        "Coplit to be requested": "Udit Chauhan",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "J Bharti",
+        "Unnamed: 5": "Poornima Mohite",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "Utkash Uttam Patil",
+        "Unnamed: 8": "Mayur Dilip Choudary",
+        "Unnamed: 9": "Harshada Ashok Shinde",
+        "Unnamed: 10": "Tejanshu Chakole"
+      },
+      {
+        "Copilot installed": "Java Developer",
+        "Copilot requested": "Khushi Jain",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "Balaram Bera",
+        "Unnamed: 7": "Helen Selvi",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "Akansha Srihari Kulkarni",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "Sr UI/UI5 Developer",
+        "Copilot requested": "Padmanaban T",
+        "Coplit to be requested": "Madhuranjan Kumar",
+        "Unnamed: 3": "Sumit Surushe",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "Priyanka N L",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "Sr UI/UI5 Developer",
+        "Copilot requested": "Lalita Babaso Khatal (UI)",
+        "Coplit to be requested": "Kamalnivasun Selvarasu (UI5)",
+        "Unnamed: 3": "Lakshman Dappu (UI5)",
+        "Unnamed: 4": "SREEJITH (UI5)",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "Kavitha S (UI5)",
+        "Unnamed: 7": "Deep Choudhary (UI5 YP)",
+        "Unnamed: 8": "Akshata Navalgi (UI5)",
+        "Unnamed: 9": "Charan (UI5)",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "UI/UI5 Developer",
+        "Copilot requested": "Chandrani Mondal  (UI5)",
+        "Coplit to be requested": "Rahul Molwa",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "Udipta Baruah",
+        "Unnamed: 5": "xxx",
+        "Unnamed: 6": "Akshay Krushnrao Ghogare",
+        "Unnamed: 7": "Akash Kumar Prasad",
+        "Unnamed: 8": "Subhodip Pal",
+        "Unnamed: 9": "Diksha Singh",
+        "Unnamed: 10": "Rachit Arora"
+      },
+      {
+        "Copilot installed": "UI/UI5 Developer",
+        "Copilot requested": "",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "Eluri Bhulakshmi",
+        "Unnamed: 7": "Aman Pratap Singh",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "Shruthilaya K (YP)",
+        "Unnamed: 10": "Udisha Venkat (YP)"
+      },
+      {
+        "Copilot installed": "Sr C++ Developer",
+        "Copilot requested": "",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "Salman Sahil",
+        "Unnamed: 4": "Ratan Pradhan",
+        "Unnamed: 5": "Abhinav Gupta",
+        "Unnamed: 6": "Raghav Bhradwaj",
+        "Unnamed: 7": "",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "Rohit Choudari",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "C++ Developer",
+        "Copilot requested": "Abhijit Thaware",
+        "Coplit to be requested": "Diwakar Jaiswal",
+        "Unnamed: 3": "Suchet Kapoor",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "Rahul Thakur",
+        "Unnamed: 8": "Vivek Morage",
+        "Unnamed: 9": "",
+        "Unnamed: 10": "Abhishek Dolase"
+      },
+      {
+        "Copilot installed": "QA automation developer",
+        "Copilot requested": "Archana Bhimrao Patil",
+        "Coplit to be requested": "K Nirupama ",
+        "Unnamed: 3": "T Gouri Sankar Patro",
+        "Unnamed: 4": "Babli Kumari",
+        "Unnamed: 5": "Manjula HA",
+        "Unnamed: 6": "Sri praneeth",
+        "Unnamed: 7": "Annapoorna G R",
+        "Unnamed: 8": "Ravi Melinamani",
+        "Unnamed: 9": "Suhas Ramachandra Inamdar",
+        "Unnamed: 10": "Suruthi Abinaya"
+      },
+      {
+        "Copilot installed": "Development Buffer",
+        "Copilot requested": "Arpita Raut (FS)",
+        "Coplit to be requested": "Md Osama",
+        "Unnamed: 3": "Kavya R",
+        "Unnamed: 4": "Dharani Kunapareddy",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "Sayan Mandal",
+        "Unnamed: 7": "",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "",
+        "Unnamed: 10": "Anubha Singh"
+      },
+      {
+        "Copilot installed": "Development Buffer",
+        "Copilot requested": "",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "Development Buffer",
+        "Copilot requested": "",
+        "Coplit to be requested": "",
+        "Unnamed: 3": "",
+        "Unnamed: 4": "",
+        "Unnamed: 5": "",
+        "Unnamed: 6": "",
+        "Unnamed: 7": "",
+        "Unnamed: 8": "",
+        "Unnamed: 9": "",
+        "Unnamed: 10": ""
+      },
+      {
+        "Copilot installed": "QE Buffer",
+        "Copilot requested": "Sanjitha T N",
+        "Coplit to be requested": "Srujana Uppala",
+        "Unnamed: 3": "Sravanthi Khammammettu",
+        "Unnamed: 4": "Srikanth Yeddu",
+        "Unnamed: 5": "Shruti Angadi",
+        "Unnamed: 6": "Sreeja Jetla",
+        "Unnamed: 7": "Prabhat .",
+        "Unnamed: 8": "Chandrashekar.S",
+        "Unnamed: 9": "Janardhana Ts",
+        "Unnamed: 10": "Sai Ram Subodh"
+      }
+    ]
+  },
+  "Copilot usage": {
+    "columns": [
+      "Unnamed: 0",
+      "Moksha",
+      "Sprinters",
+      "Coders"
+    ],
+    "shape": [
+      6,
+      4
+    ],
+    "data": [
+      {
+        "Unnamed: 0": "How many have tried Copilot that is installed?",
+        "Moksha": "7:\nSunil Choubey\nTarun Kinnare\nAmmar Saippu Sheik Mohamed\nPadmanaban T\nLalita Babaso Khatal\nChandrani Modal\nAbhijit Thaware ",
+        "Sprinters": "6: \nManikandan Jayagopal\nAnitha M\nKM Suresh\nUdit Chauhan\nMadhuranjan Kumar\nDiwakar Jaiswal",
+        "Coders": "4 users\nNarender Negi\nPritom Paul\nVishal Sakpal\nGulla Prathap Reddy"
+      },
+      {
+        "Unnamed: 0": "Purpose for which it is being used (specify Qunit, Groovy Spock etc.)",
+        "Moksha": "QunIt and Groovy Spock",
+        "Sprinters": "Qunit, Groovy Spock, C++ to Java porting",
+        "Coders": "Groovy spock"
+      },
+      {
+        "Unnamed: 0": "How many days have they used it?",
+        "Moksha": "5-7 Days",
+        "Sprinters": "4-6 days",
+        "Coders": "4 days"
+      },
+      {
+        "Unnamed: 0": "How many provided positive feedback",
+        "Moksha": 6,
+        "Sprinters": 4,
+        "Coders": 4
+      },
+      {
+        "Unnamed: 0": "How much % improvement observed or any other quantification between earlier vs now with Copilot",
+        "Moksha": "50% - 60% ",
+        "Sprinters": "30-40%",
+        "Coders": 0.3
+      },
+      {
+        "Unnamed: 0": "Any other points",
+        "Moksha": "The most significant improvements were observed in testing frameworks like QUnit and Groovy Spock, where Copilot provided valuable assistance\nRoutine coding tasks were expedited, allowing developers to focus more on high-priority and complex issues\nWith continued use, we anticipate even greater gains in productivity and quality, potentially leading to higher throughput in project deliverables",
+        "Sprinters": "The improvements observed in case unit testing . Qunit generation is mostly used by all resources who got license. \nGroovy spock code genration , helps manual validation is still required.\nTried code porting from C++ to java. But prompting required inputs would consume more time . Manual was preferred in this case.\nWith continued usage team would be able to prompt with more relevant inputs and will be able to improve throughput.",
+        "Coders": "1. actively used for Groovy spock test case\n2. Consumed lot of CPU reosurces as REPO is linked to the co-pilot\n3. continous inputs has to be provided to achieve out-put"
+      }
+    ]
+  },
+  "Copilot benefits": {
+    "columns": [
+      "Task Category",
+      "Development Scenario",
+      "Baseline Effort (Est.)",
+      "Effort with Copilot",
+      "Efficiency Gain / Remarks"
+    ],
+    "shape": [
+      10,
+      5
+    ],
+    "data": [
+      {
+        "Task Category": "Groovy (Spock)",
+        "Development Scenario": "Writing unit/integration test cases",
+        "Baseline Effort (Est.)": "2 hours",
+        "Effort with Copilot": "1\u20131.2 hours",
+        "Efficiency Gain / Remarks": "40\u201350% gain; faster scaffolding and mocking"
+      },
+      {
+        "Task Category": "JavaScript (QUnit)",
+        "Development Scenario": "Authoring frontend unit tests",
+        "Baseline Effort (Est.)": "1.5 hours",
+        "Effort with Copilot": "45\u201355 minutes",
+        "Efficiency Gain / Remarks": "40\u201350% gain; DOM mocking and test generation"
+      },
+      {
+        "Task Category": "JavaScript (Karma + Sonar)",
+        "Development Scenario": "Integrating code coverage and static analysis",
+        "Baseline Effort (Est.)": "4 hours",
+        "Effort with Copilot": "2.8\u20133 hours",
+        "Efficiency Gain / Remarks": "25\u201330% gain; simplified configuration"
+      },
+      {
+        "Task Category": "SAP UI5",
+        "Development Scenario": "Generating base frontend components with simple logic",
+        "Baseline Effort (Est.)": "5 hours",
+        "Effort with Copilot": "3.75\u20134 hours",
+        "Efficiency Gain / Remarks": "20\u201325% gain; varies with component complexity"
+      },
+      {
+        "Task Category": "C++ (New Logic)",
+        "Development Scenario": "Adding/updating business logic with cleaner, modular code",
+        "Baseline Effort (Est.)": "6 hours",
+        "Effort with Copilot": "4.2\u20134.5 hours",
+        "Efficiency Gain / Remarks": "25\u201330% gain; improved maintainability"
+      },
+      {
+        "Task Category": "C++ \u2192 Java Migration",
+        "Development Scenario": "Analyzing C++ code and generating equivalent Java with improvements",
+        "Baseline Effort (Est.)": "8 hours",
+        "Effort with Copilot": "4.8\u20135.2 hours",
+        "Efficiency Gain / Remarks": "35\u201340% gain; Copilot aids in translation"
+      },
+      {
+        "Task Category": "Java (New Logic)",
+        "Development Scenario": "Implementing or refactoring business logic with better cohesion",
+        "Baseline Effort (Est.)": "6 hours",
+        "Effort with Copilot": "4.2\u20134.5 hours",
+        "Efficiency Gain / Remarks": "25\u201330% gain; varies with code complexity"
+      },
+      {
+        "Task Category": "Java from C++ Analysis",
+        "Development Scenario": "Generating Java code based on C++ logic and architectural improvements",
+        "Baseline Effort (Est.)": "8 hours",
+        "Effort with Copilot": "5.2\u20135.6 hours",
+        "Efficiency Gain / Remarks": "30\u201335% gain; Copilot accelerates mapping"
+      },
+      {
+        "Task Category": "",
+        "Development Scenario": "",
+        "Baseline Effort (Est.)": 8,
+        "Effort with Copilot": 5.2,
+        "Efficiency Gain / Remarks": ""
+      },
+      {
+        "Task Category": "",
+        "Development Scenario": "",
+        "Baseline Effort (Est.)": "",
+        "Effort with Copilot": -0.35,
+        "Efficiency Gain / Remarks": ""
+      }
+    ]
+  },
+  "Emp Data": {
+    "columns": [
+      "Name",
+      "CG Email",
+      "C user ID"
+    ],
+    "shape": [
+      189,
+      3
+    ],
+    "data": [
+      {
+        "Name": "Ganesh Ramdas",
+        "CG Email": "ganesh.ramdas@capgemini.com",
+        "C user ID": "C5391375"
+      },
+      {
+        "Name": "Sunil Choubey",
+        "CG Email": "sunil.choubey@capgemini.com",
+        "C user ID": "C5391372"
+      },
+      {
+        "Name": "Anitha M",
+        "CG Email": "ANITHA.B.M@CAPGEMINI.COM",
+        "C user ID": "C5392064"
+      },
+      {
+        "Name": "Sunitha Vasudevan",
+        "CG Email": "sunitha.vasudevan-kesavan@capgemini.com",
+        "C user ID": "C5392187"
+      },
+      {
+        "Name": "UPASANA SINHA",
+        "CG Email": "upasana.a.sinha@capgemini.com",
+        "C user ID": "C5392066"
+      },
+      {
+        "Name": "Manikandan Jayagopal",
+        "CG Email": "manikandan.jayagopal@capgemini.com",
+        "C user ID": "C5392069"
+      },
+      {
+        "Name": "Pankaj Adhikari",
+        "CG Email": "pankaj.a.adhikari@capgemini.com",
+        "C user ID": "C5392070"
+      },
+      {
+        "Name": "Shwetha C",
+        "CG Email": "shwetha.b.c@capgemini.com",
+        "C user ID": "C5392068"
+      },
+      {
+        "Name": "Prashanth Prakash",
+        "CG Email": "prasanth.prakash@capgemini.com",
+        "C user ID": "C5392190"
+      },
+      {
+        "Name": "Gouri Sankar T Patro",
+        "CG Email": "tgouri.patro@capgemini.com",
+        "C user ID": "C5392073"
+      },
+      {
+        "Name": "Shivshankar Malviya",
+        "CG Email": "SHIVSHANKAR.MALVIYA@CAPGEMINI.COM",
+        "C user ID": "C5392075"
+      },
+      {
+        "Name": "Suhas Ramachandra Inamdar",
+        "CG Email": "suhas-ramachandra.inamdar@capgemini.com",
+        "C user ID": "C5392204"
+      },
+      {
+        "Name": "Arnab chakraborty",
+        "CG Email": "arnab.d.chakraborty@capgemini.com",
+        "C user ID": "C5392072"
+      },
+      {
+        "Name": "Ashwini SU",
+        "CG Email": "ASHWINI.S-U@CAPGEMINI.COM",
+        "C user ID": "C5392189"
+      },
+      {
+        "Name": "Soniya Tripathi",
+        "CG Email": "soniya.tripathi@capgemini.com",
+        "C user ID": "C5392191"
+      },
+      {
+        "Name": "Atul Mohanty",
+        "CG Email": "atulkumar.mohanty@capgemini.com",
+        "C user ID": "C5392236"
+      },
+      {
+        "Name": "Sudheer Chigurupati",
+        "CG Email": "chigurupati.sudheer@capgemini.com",
+        "C user ID": "C5392352"
+      },
+      {
+        "Name": "Arushi Goel",
+        "CG Email": "ARUSHI.GOEL@CAPGEMINI.COM",
+        "C user ID": "C5392391"
+      },
+      {
+        "Name": "Sumit Surushe",
+        "CG Email": "SUMIT.BHAGWAT-SURUSHE@CAPGEMINI.COM",
+        "C user ID": "C5392077"
+      },
+      {
+        "Name": "Madhu Babu Velpuri",
+        "CG Email": "MADHU-BABU.VELPURI@CAPGEMINI.COM",
+        "C user ID": "C5392258"
+      },
+      {
+        "Name": "Padmini Chammoth Sivaraman",
+        "CG Email": "padmini.chammothsivaraman@capgemini.com",
+        "C user ID": "C5392081"
+      },
+      {
+        "Name": "Malathi Malathi",
+        "CG Email": "malathi.b.malathi@capgemini.com",
+        "C user ID": "C5392083"
+      },
+      {
+        "Name": "PRATHAP REDDY GULLA",
+        "CG Email": "GULLA.REDDY@CAPGEMINI.COM",
+        "C user ID": "C5392079"
+      },
+      {
+        "Name": "Vamsi Krishna",
+        "CG Email": "VAMSI.H.KRISHNA@CAPGEMINI.COM",
+        "C user ID": "C5392059"
+      },
+      {
+        "Name": "Naresh Goud Battikadi",
+        "CG Email": "BATTIKADI-NARESH.GOUD@CAPGEMINI.COM",
+        "C user ID": "C5392062"
+      },
+      {
+        "Name": "OMPRAKASH DUBEY",
+        "CG Email": "omprakash.dubey@capgemini.com",
+        "C user ID": "C5392060"
+      },
+      {
+        "Name": "Priyanka N L",
+        "CG Email": "PRIYANKA.N-L@CAPGEMINI.COM",
+        "C user ID": "C5392061"
+      },
+      {
+        "Name": "Rimjhim",
+        "CG Email": "rimjhim.rimjhim@capgemini.com",
+        "C user ID": "C5392058"
+      },
+      {
+        "Name": "Abhinav Gupta",
+        "CG Email": "abhinav3.gupta@capgemini.com",
+        "C user ID": "C5392056"
+      },
+      {
+        "Name": "Neeraj Ughade",
+        "CG Email": "neeraj.ughade@capgemini.com",
+        "C user ID": "C5392052"
+      },
+      {
+        "Name": "Ratan Pradhan",
+        "CG Email": "ratan.pradhan@capgemini.com",
+        "C user ID": "C5392055"
+      },
+      {
+        "Name": "Sudeshna Roy",
+        "CG Email": "sudeshna.roy@capgemini.com",
+        "C user ID": "C5392051"
+      },
+      {
+        "Name": "Nirupama MK",
+        "CG Email": "nirupama-m.k@capgemini.com",
+        "C user ID": "C5392351"
+      },
+      {
+        "Name": "Narender Negi",
+        "CG Email": "narender.negi@capgemini.com",
+        "C user ID": "C5392195"
+      },
+      {
+        "Name": "Madhuranjan Kumar",
+        "CG Email": "madhuranjan.kumar@capgemini.com",
+        "C user ID": "C5392082"
+      },
+      {
+        "Name": "Tarun Kumar Kinnera",
+        "CG Email": "KINNERA.KUMAR@CAPGEMINI.COM",
+        "C user ID": "C5392098"
+      },
+      {
+        "Name": "Suresh KM",
+        "CG Email": "KM.SURESH@CAPGEMINI.COM",
+        "C user ID": "C5392099"
+      },
+      {
+        "Name": " Akshay Krushnrao Ghogare",
+        "CG Email": "akshay.krushnrao-ghogare@capgemini.com",
+        "C user ID": "C5392147"
+      },
+      {
+        "Name": "Subhodip Pal",
+        "CG Email": "subhodip.pal@capgemini.com",
+        "C user ID": "C5392105"
+      },
+      {
+        "Name": "Navyashree CR",
+        "CG Email": "navyashree.c-r@capgemini.com",
+        "C user ID": "C5392112"
+      },
+      {
+        "Name": "Rosalin Mandhata",
+        "CG Email": "ROSALIN.MANDHATA@CAPGEMINI.COM",
+        "C user ID": "C5392123"
+      },
+      {
+        "Name": "Manish Kumar",
+        "CG Email": "MANISH.D.KUMAR@CAPGEMINI.COM",
+        "C user ID": "C5392102"
+      },
+      {
+        "Name": "Pritom Paul",
+        "CG Email": "PRITOM.PAUL@CAPGEMINI.COM",
+        "C user ID": "C5392101"
+      },
+      {
+        "Name": "Karthik Appasamy",
+        "CG Email": "KARTHIK.APPASAMY@CAPGEMINI.COM",
+        "C user ID": "C5392103"
+      },
+      {
+        "Name": "Rajiv Sen",
+        "CG Email": "rajiv.sen@capgemini.com",
+        "C user ID": "C5392118"
+      },
+      {
+        "Name": "Muzamil Pasha",
+        "CG Email": "muzamil.pasha@capgemini.com",
+        "C user ID": "C5392119"
+      },
+      {
+        "Name": "Nandini R",
+        "CG Email": "NANDINI.B.R@CAPGEMINI.COM",
+        "C user ID": "C5392120"
+      },
+      {
+        "Name": "Anukul Kumar",
+        "CG Email": "ANUKUL.KUMAR@CAPGEMINI.COM",
+        "C user ID": "C5392114"
+      },
+      {
+        "Name": "RUPESH KUMAR",
+        "CG Email": "rupesh.i.kumar@capgemini.com",
+        "C user ID": "C5392108"
+      },
+      {
+        "Name": "Abhijit Thaware",
+        "CG Email": "abhijit.prakash-thaware@capgemini.com",
+        "C user ID": "C5392110"
+      },
+      {
+        "Name": "Sanjitha T N",
+        "CG Email": "sanjitha.t-n@capgemini.com",
+        "C user ID": "C5392109"
+      },
+      {
+        "Name": "Prabhat .",
+        "CG Email": "prabhat.b.prabhat@capgemini.com",
+        "C user ID": "C5392387"
+      },
+      {
+        "Name": "Janardhana Ts",
+        "CG Email": "janardhana.t-s@capgemini.com",
+        "C user ID": "C5392129"
+      },
+      {
+        "Name": "Srujana Uppala",
+        "CG Email": "srujana.uppala@capgemini.com",
+        "C user ID": "C5392128"
+      },
+      {
+        "Name": "Ashish Singh",
+        "CG Email": "ashish.n.singh@capgemini.com",
+        "C user ID": "C5392130"
+      },
+      {
+        "Name": "Eluri Bhulakshmi",
+        "CG Email": "ELURI.BHULAKSHMI@CAPGEMINI.COM",
+        "C user ID": "C5392132"
+      },
+      {
+        "Name": "Sri Praneeth Popuri Eswar Durga",
+        "CG Email": "popuri-eswar-durga.sri-praneeth@capgemini.com",
+        "C user ID": "C5392259"
+      },
+      {
+        "Name": "Archana Bhimrao Patil",
+        "CG Email": "archana.bhimraopatil@capgemini.com",
+        "C user ID": "C5392131"
+      },
+      {
+        "Name": "Trinath Sahu",
+        "CG Email": "trinath.sahu@capgemini.com",
+        "C user ID": "C5392206"
+      },
+      {
+        "Name": "Suma N",
+        "CG Email": "SUMA.C.N@CAPGEMINI.COM",
+        "C user ID": "C5392145"
+      },
+      {
+        "Name": "Ramya R",
+        "CG Email": "RAMYA.M.R@CAPGEMINI.COM",
+        "C user ID": "C5392146"
+      },
+      {
+        "Name": "Prashanth Dyavanapally",
+        "CG Email": "DYAVANAPALLY.PRASHANTH@CAPGEMINI.COM",
+        "C user ID": "C5392188"
+      },
+      {
+        "Name": "Sayali Kailas Raut",
+        "CG Email": "SAYALI.KAILAS-RAUT@CAPGEMINI.COM",
+        "C user ID": "C5392126"
+      },
+      {
+        "Name": "Udipta Baruah",
+        "CG Email": "UDIPTA.BARUAH@CAPGEMINI.COM",
+        "C user ID": "C5392076"
+      },
+      {
+        "Name": "Akash Kumar Prasad",
+        "CG Email": "AKASH-KUMAR.PRASAD@CAPGEMINI.COM",
+        "C user ID": "C5392124"
+      },
+      {
+        "Name": "Praveen K",
+        "CG Email": "praveen.e.k@capgemini.com",
+        "C user ID": "C5392127"
+      },
+      {
+        "Name": "Aman Pratap Singh",
+        "CG Email": "AMAN-PRATAP.SINGH@CAPGEMINI.COM",
+        "C user ID": "C5392140"
+      },
+      {
+        "Name": "Rahul Molwa",
+        "CG Email": "RAHUL.MOLWA@CAPGEMINI.COM",
+        "C user ID": "C5392137"
+      },
+      {
+        "Name": "Shruthilaya K",
+        "CG Email": "SHRUTHILAYA.K@CAPGEMINI.COM",
+        "C user ID": "C5392139"
+      },
+      {
+        "Name": "Diwakar Jaiswal",
+        "CG Email": "diwakar.jaiswal@capgemini.com",
+        "C user ID": "C5392309"
+      },
+      {
+        "Name": "Sirisha Banala",
+        "CG Email": "sirisha.banala@capgemini.com",
+        "C user ID": "C5392202"
+      },
+      {
+        "Name": "Ammar Seippu Sheik Mohamed",
+        "CG Email": "AMMAR.SEIPPU-SHEIK-MOHAMED@CAPGEMINI.COM",
+        "C user ID": "C5347846"
+      },
+      {
+        "Name": "SAI KUMAR EJJIPURAPU",
+        "CG Email": "ejjipurapu.sai-kumar@capgemini.com",
+        "C user ID": "C5392135"
+      },
+      {
+        "Name": "Nihal Thirunagari",
+        "CG Email": "nihal.a.thirunagari@capgemini.com",
+        "C user ID": "C5392136"
+      },
+      {
+        "Name": "Ramesh V.C",
+        "CG Email": "V-C.RAMESH@CAPGEMINI.COM",
+        "C user ID": "C5392210"
+      },
+      {
+        "Name": "Srihari  Naramsetty",
+        "CG Email": "venkata-srihari.naramsetty@capgemini.com",
+        "C user ID": "C5392148"
+      },
+      {
+        "Name": "Madhukumar K",
+        "CG Email": "madhukumar.k@capgemini.com",
+        "C user ID": "C5392164"
+      },
+      {
+        "Name": "Babli Kumari",
+        "CG Email": "babli.kumari@capgemini.com",
+        "C user ID": "C5392168"
+      },
+      {
+        "Name": "Sravanthi Khammammettu",
+        "CG Email": "khammammettu.sravanthi@capgemini.com",
+        "C user ID": "C5392394"
+      },
+      {
+        "Name": "Rachit Arora",
+        "CG Email": "rachit.arora@capgemini.com",
+        "C user ID": "C5392199"
+      },
+      {
+        "Name": "Rahul Thakur",
+        "CG Email": "Rahul.kumarthakur@capgemini.com",
+        "C user ID": "C5392173"
+      },
+      {
+        "Name": "Sumanthu Sundaresan",
+        "CG Email": "s.sumanthu@capgemini.com",
+        "C user ID": "C5392176"
+      },
+      {
+        "Name": "Chandrika Prasad",
+        "CG Email": "chandrika.prasad@capgemini.com",
+        "C user ID": "C5392212"
+      },
+      {
+        "Name": "Vijaya Kumar Sarode",
+        "CG Email": "vijaya-kumar.sarode@capgemini.com",
+        "C user ID": "C5393188"
+      },
+      {
+        "Name": "Rakesh Chennakesavulu",
+        "CG Email": "rakesh.chennakesavulu@capgemini.com",
+        "C user ID": "C5393333"
+      },
+      {
+        "Name": "Srinivas Kaithi",
+        "CG Email": "SRINIVAS.A.K@CAPGEMINI.COM",
+        "C user ID": "C5392174"
+      },
+      {
+        "Name": "Ashwini S",
+        "CG Email": "ASHWINI.E.S@CAPGEMINI.COM",
+        "C user ID": "C5392175"
+      },
+      {
+        "Name": "Ashish Jaysinh Vaghela",
+        "CG Email": "ashish-jaysinh.vaghela@capgemini.com",
+        "C user ID": "C5392395"
+      },
+      {
+        "Name": "Ravi Prakash",
+        "CG Email": "RAVI.D.PRAKASH@CAPGEMINI.COM",
+        "C user ID": "C5392172"
+      },
+      {
+        "Name": "Udisha Venkat ",
+        "CG Email": "UDISHA.VENKAT@CAPGEMINI.COM",
+        "C user ID": "C5392177"
+      },
+      {
+        "Name": "Diksha Singh",
+        "CG Email": "DIKSHA.F.SINGH@CAPGEMINI.COM",
+        "C user ID": "C5392178"
+      },
+      {
+        "Name": "Parvati Daanney",
+        "CG Email": "parvati.daanney@capgemini.com",
+        "C user ID": "C5392197"
+      },
+      {
+        "Name": "Anubha Singh",
+        "CG Email": "ANUBHA.SINGH@CAPGEMINI.COM",
+        "C user ID": "C5392149"
+      },
+      {
+        "Name": "Dilip Mayur Chaudhari",
+        "CG Email": "MAYUR.DILIPCHAUDHARI@CAPGEMINI.COM",
+        "C user ID": "C5392152"
+      },
+      {
+        "Name": "Bharti J",
+        "CG Email": "J.A.BHARTI@CAPGEMINI.COM",
+        "C user ID": "C5392155"
+      },
+      {
+        "Name": "Khushi Jain",
+        "CG Email": "KHUSHI.JAIN@CAPGEMINI.COM",
+        "C user ID": "C5392156"
+      },
+      {
+        "Name": "Tanya Tripati",
+        "CG Email": "TANYA.TRIPATHI@CAPGEMINI.COM",
+        "C user ID": "C5392158"
+      },
+      {
+        "Name": "Akanksha Shrihari Kulkarni",
+        "CG Email": "AKANKSHA.SHRIHARIKULKARNI@CAPGEMINI.COM",
+        "C user ID": "C5392160"
+      },
+      {
+        "Name": "Pavitra Panduranga Patil",
+        "CG Email": "PAVITRA.PANDURANGPATIL@CAPGEMINI.COM",
+        "C user ID": "C5392161"
+      },
+      {
+        "Name": "ASHLESHA AJAY PATIL",
+        "CG Email": "ASHLESHA.AJAYPATIL@CAPGEMINI.COM",
+        "C user ID": "C5392162"
+      },
+      {
+        "Name": "Utkarsha Uttam Patil",
+        "CG Email": "UTKARSHA.UTTAMPATIL@CAPGEMINI.COM",
+        "C user ID": "C5392159"
+      },
+      {
+        "Name": "Harshada Ashok Shinde",
+        "CG Email": "HARSHADA.ASHOKSHINDE@CAPGEMINI.COM",
+        "C user ID": "C5392163"
+      },
+      {
+        "Name": "Shivam Kumar",
+        "CG Email": "shivam.g.kumar@capgemini.com",
+        "C user ID": "C5392170"
+      },
+      {
+        "Name": "Chinmaye R",
+        "CG Email": "r.chinmaye@capgemini.com",
+        "C user ID": "C5392403"
+      },
+      {
+        "Name": "Vigneshwararaj T",
+        "CG Email": "t.vigneshwararaj@capgemini.com",
+        "C user ID": "C5392558"
+      },
+      {
+        "Name": "Ravi Melinamani",
+        "CG Email": "ravi.melinamani@capgemini.com",
+        "C user ID": "C5392171"
+      },
+      {
+        "Name": "Randeep Singh",
+        "CG Email": "randeep.d.singh@capgemini.com",
+        "C user ID": "C5392167"
+      },
+      {
+        "Name": "Shruti Angadi",
+        "CG Email": "shruti.mahadevappa-angadi@capgemini.com",
+        "C user ID": "C5392354"
+      },
+      {
+        "Name": "Tejanshu Chakole",
+        "CG Email": "tejanshu.chakole@capgemini.com",
+        "C user ID": "C5388330"
+      },
+      {
+        "Name": "Kapil Gupta",
+        "CG Email": "kapil.d.gupta@capgemini.com",
+        "C user ID": "C5392165"
+      },
+      {
+        "Name": "Prakash Chettri",
+        "CG Email": "prakash.chettri@capgemini.com",
+        "C user ID": "C5392166"
+      },
+      {
+        "Name": "Vishal Sakpal",
+        "CG Email": "VISHAL.SAKPAL@CAPGEMINI.COM",
+        "C user ID": "C5392355"
+      },
+      {
+        "Name": "Prakash Mantur",
+        "CG Email": "prakash.mantur@capgemini.com",
+        "C user ID": "C5392396"
+      },
+      {
+        "Name": "Naveen Kumar Dhamodaran",
+        "CG Email": "naveen-kumar.dhamodaran@capgemini.com",
+        "C user ID": "C5392589"
+      },
+      {
+        "Name": "Manisha Sanduja",
+        "CG Email": "manisha.sanduja@capgemini.com",
+        "C user ID": "C5392393"
+      },
+      {
+        "Name": "Raghuram SG",
+        "CG Email": "raghuram.sg@capgemini.com",
+        "C user ID": "C5392392"
+      },
+      {
+        "Name": "Revathi S",
+        "CG Email": "revathi.a.s@capgemini.com",
+        "C user ID": "C5392399"
+      },
+      {
+        "Name": "Bindya S",
+        "CG Email": "bindya.s@capgemini.com",
+        "C user ID": "C5392397"
+      },
+      {
+        "Name": "Debasish Dash",
+        "CG Email": "debasish.c.dash@capgemini.com",
+        "C user ID": "C5392401"
+      },
+      {
+        "Name": "Pavithra J",
+        "CG Email": "pavithra.b.j@capgemini.com",
+        "C user ID": "C5392402"
+      },
+      {
+        "Name": "Naveena Pulimi",
+        "CG Email": "naveena.pulimi@capgemini.com",
+        "C user ID": "C5392562"
+      },
+      {
+        "Name": "Abinaya Suruthi Muthuraja",
+        "CG Email": "suruthi-abinaya.muthuraja@capgemini.com",
+        "C user ID": "C5392559"
+      },
+      {
+        "Name": "Manjula H A",
+        "CG Email": "manjula.h-a@capgemini.com",
+        "C user ID": "C5392389"
+      },
+      {
+        "Name": "ANNAPOORNA G R",
+        "CG Email": "annapoorna.gr@capgemini.com",
+        "C user ID": "C5392388"
+      },
+      {
+        "Name": "Aswani Devi Pabbineedi",
+        "CG Email": "pabbineedi.aswani-devi@capgemini.com",
+        "C user ID": "C5392398"
+      },
+      {
+        "Name": "Sanket Madhavi",
+        "CG Email": "sanket.madhavi@capgemini.com",
+        "C user ID": "C5392400"
+      },
+      {
+        "Name": "Sadanand Keeliputti",
+        "CG Email": "sadanand.keeliputti@capgemini.com",
+        "C user ID": "C5392566"
+      },
+      {
+        "Name": "Meenakshi Akhlesh Rai",
+        "CG Email": "meenakshi-akhlesh.rai@capgemini.com",
+        "C user ID": "C5392604"
+      },
+      {
+        "Name": "Jagana Sahu",
+        "CG Email": "jagana.sahu@capgemini.com",
+        "C user ID": "C5392602"
+      },
+      {
+        "Name": "Sahil Salman",
+        "CG Email": "sahil.salman@capgemini.com",
+        "C user ID": "C5392603"
+      },
+      {
+        "Name": "Udit Chauhan",
+        "CG Email": "udit.chauhan@capgemini.com",
+        "C user ID": "C5392689"
+      },
+      {
+        "Name": "Bipin Kumar",
+        "CG Email": "bipin.kumar@capgemini.com",
+        "C user ID": "C5393259"
+      },
+      {
+        "Name": "Anil Kumar A",
+        "CG Email": "ANIL-KUMAR.A@CAPGEMINI.COM",
+        "C user ID": "C5393018"
+      },
+      {
+        "Name": "Nikita Bhamare",
+        "CG Email": "nikita.bhamare@capgemini.com",
+        "C user ID": "C5393261"
+      },
+      {
+        "Name": "Vivek Vamanrao Morage",
+        "CG Email": "vivek.vamanrao-morage@capgemini.com",
+        "C user ID": "C5393255"
+      },
+      {
+        "Name": "Imran B Ansari",
+        "CG Email": "IMRAN.B.ANSARI@CAPGEMINI.COM",
+        "C user ID": "C5393258"
+      },
+      {
+        "Name": "Raja Subrmanya",
+        "CG Email": "raja.a.subramanian@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Leena Toney Anthony",
+        "CG Email": "leena-toney.anthony@capgemini.com",
+        "C user ID": "C5393021"
+      },
+      {
+        "Name": "Lalita Babaso Khatal",
+        "CG Email": "LALITA.BABASO-KHATAL@CAPGEMINI.COM",
+        "C user ID": "C5393102"
+      },
+      {
+        "Name": "Raghav Bhardwaj",
+        "CG Email": "raghav.bhardwaj@capgemini.com",
+        "C user ID": "C5393019"
+      },
+      {
+        "Name": "Surbhi Yadav",
+        "CG Email": "surbhi.b.yadav@capgemini.com",
+        "C user ID": "C5393495"
+      },
+      {
+        "Name": "Abhishek Dolase",
+        "CG Email": "abhishek.gowardhan-dolase@capgemini.com",
+        "C user ID": "C5393256"
+      },
+      {
+        "Name": "Padmanaban T",
+        "CG Email": "padmanaban.t@capgemini.com",
+        "C user ID": "C5393257"
+      },
+      {
+        "Name": "Suchet Kapoor",
+        "CG Email": "suchet.kapoor@capgemini.com",
+        "C user ID": "C5393260"
+      },
+      {
+        "Name": "Poornima Mohite",
+        "CG Email": "poornima.mohite@capgemini.com",
+        "C user ID": "C5379549"
+      },
+      {
+        "Name": "Anisha Chopra",
+        "CG Email": "anisha.chopra@capgemini.com",
+        "C user ID": "C5393262"
+      },
+      {
+        "Name": "Manmohan Swain",
+        "CG Email": "manmohan.swain@capgemini.com",
+        "C user ID": "C5361930"
+      },
+      {
+        "Name": "Jagadeesh M",
+        "CG Email": "jagadeesh.c.m@capgemini.com",
+        "C user ID": "C5358273"
+      },
+      {
+        "Name": "Pavan Kumar Reddy",
+        "CG Email": "m-pavan-kumar.reddy@capgemini.com",
+        "C user ID": "C5385460"
+      },
+      {
+        "Name": "Rohitkumar Chaudhari",
+        "CG Email": "rohitkumar.chaudhari@capgemini.com",
+        "C user ID": "C5393254"
+      },
+      {
+        "Name": "Diwakar Verma",
+        "CG Email": "diwakar.verma@capgemini.com",
+        "C user ID": "C5394406"
+      },
+      {
+        "Name": "Najiya Sheik",
+        "CG Email": "sheik.najiya@capgemini.com",
+        "C user ID": "C5394398"
+      },
+      {
+        "Name": "Sreeja Jetla",
+        "CG Email": "sreeja.jetla@capgemini.com",
+        "C user ID": "C5394034"
+      },
+      {
+        "Name": "Sai Ram Subodh Varma Datla",
+        "CG Email": "sai-ram-subodh-varma.datla@capgemini.com",
+        "C user ID": "C5394100"
+      },
+      {
+        "Name": "Srikanth Yeddu",
+        "CG Email": "srikanth.yeddu@capgemini.com",
+        "C user ID": "C5394419"
+      },
+      {
+        "Name": "Saraswathi Subramanian",
+        "CG Email": "SARASWATHI.SUBRAMANIAN@CAPGEMINI.COM",
+        "C user ID": "C5394709"
+      },
+      {
+        "Name": "Osama MD",
+        "CG Email": "md.osama@capgemini.com",
+        "C user ID": "C5395887"
+      },
+      {
+        "Name": "Dharani Kunapareddy ",
+        "CG Email": "kunapareddy.dharani@capgemini.com",
+        "C user ID": "C5395889"
+      },
+      {
+        "Name": "Sayan Mandal",
+        "CG Email": "sayan.a.mandal@capgemini.com",
+        "C user ID": "C5396105"
+      },
+      {
+        "Name": "Kavya R",
+        "CG Email": "kavya.i.r@capgemini.com",
+        "C user ID": "C5395890"
+      },
+      {
+        "Name": "Arpita Vasant Raut",
+        "CG Email": "arpita-vasant.raut@capgemini.com",
+        "C user ID": "C5396104"
+      },
+      {
+        "Name": "Balaram Bera",
+        "CG Email": "balaram.a.bera@capgemini.com",
+        "C user ID": "C5396106"
+      },
+      {
+        "Name": "Kavitha S",
+        "CG Email": "s-kavitha.s-kavitha@capgemini.com",
+        "C user ID": "C5383370"
+      },
+      {
+        "Name": "Vyankatesh Barve",
+        "CG Email": "barve.vyankatesh-nandprasad@capgemini.com",
+        "C user ID": "C5396587"
+      },
+      {
+        "Name": "RAGHAVENDRA GUJJAR R",
+        "CG Email": " raghavendra-gujjar.r@capgemini.com",
+        "C user ID": "C5396818"
+      },
+      {
+        "Name": "Sreejith Sukumaran",
+        "CG Email": "sreejith.a.sukumaran@capgemini.com",
+        "C user ID": "C5396586"
+      },
+      {
+        "Name": "Akshata Navalgi",
+        "CG Email": "akshata.navalgi@capgemini.com",
+        "C user ID": "C5396377"
+      },
+      {
+        "Name": "Dappu Lakshman",
+        "CG Email": "dappu.lakshman@capgemini.com",
+        "C user ID": "C5396638"
+      },
+      {
+        "Name": "Chandrani Mondal",
+        "CG Email": "chandrani.mondal@capgemini.com",
+        "C user ID": "C5396764"
+      },
+      {
+        "Name": "Ritam Lahiri",
+        "CG Email": "ritam.lahiri@capgemini.com",
+        "C user ID": "C5397192"
+      },
+      {
+        "Name": "Udayakumar Bandi",
+        "CG Email": "udayakumar.bandi@capgemini.com",
+        "C user ID": "C5397512"
+      },
+      {
+        "Name": "Sree Valli Sarva",
+        "CG Email": "sree-valli.sarva@capgemini.com",
+        "C user ID": "C5397999"
+      },
+      {
+        "Name": "Sanjeet Jha",
+        "CG Email": "sanjeet.jha@capgemini.com",
+        "C user ID": "C5397514"
+      },
+      {
+        "Name": "Kamalnivasun Selvarasu",
+        "CG Email": "kamalnivasun.selvarasu@capgemini.com",
+        "C user ID": "C5397409"
+      },
+      {
+        "Name": "Chandrashekar S",
+        "CG Email": "chandrashekar.s@capgemini.com",
+        "C user ID": "C5397410"
+      },
+      {
+        "Name": "Sujit Madhavan Karatparambil",
+        "CG Email": " sujit.madhavan@capgemini.com",
+        "C user ID": "C5397702"
+      },
+      {
+        "Name": "Helen Selvi",
+        "CG Email": "helen.selvi-a@capgemini.com",
+        "C user ID": "C5388379"
+      },
+      {
+        "Name": "Supriya Pasupaleti",
+        "CG Email": "pasupuleti.supriya@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Haritha Ponanna",
+        "CG Email": "ponnana.haritha@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Navya Sree, Malidevi",
+        "CG Email": "malidevi.navya-sree@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Naru, Venkata Kavya",
+        "CG Email": "venkata-kavya.naru@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Harshal Bhupendra Jain",
+        "CG Email": "harshal-bhupendra.jain@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Charan Raj",
+        "CG Email": "charan.raj@capgemini.com",
+        "C user ID": "C5387270"
+      },
+      {
+        "Name": "Xi Yang",
+        "CG Email": "xi.b.yang@capgemini.com",
+        "C user ID": "C5337242"
+      },
+      {
+        "Name": "Deep Choudhury",
+        "CG Email": "deep.a.choudhury@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "N, Thanushree",
+        "CG Email": "thanushree.n@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Pravat Kumar Swain",
+        "CG Email": "\u00a0pravat-kumar.swain@capgemini.com",
+        "C user ID": ""
+      },
+      {
+        "Name": "Tushar Panchal",
+        "CG Email": "",
+        "C user ID": ""
+      },
+      {
+        "Name": "Pradeep Tanwar",
+        "CG Email": "",
+        "C user ID": ""
+      }
+    ]
+  }
+}
