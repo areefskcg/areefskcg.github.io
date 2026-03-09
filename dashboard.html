@@ -400,6 +400,28 @@
             background: rgba(124, 58, 237, 0.7);
         }
 
+        /* Assessment columns styling */
+        #developerTable td:nth-child(n+9):nth-child(-n+15) {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        #developerTable td:nth-child(15) {
+            font-weight: bold;
+        }
+
+        #developerTable td:nth-child(16) {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: help;
+        }
+
+        #developerTable th:nth-child(n+9) {
+            background: rgba(0, 212, 255, 0.3);
+        }
+
         @media (max-width: 768px) {
             .charts-container {
                 grid-template-columns: 1fr;
@@ -448,6 +470,16 @@
             <div class="icon">⏳</div>
             <div class="value">18</div>
             <div class="label">Pending Requests</div>
+        </div>
+        <div class="metric-card">
+            <div class="icon">🧠</div>
+            <div class="value">5</div>
+            <div class="label">Gen AI Experts</div>
+        </div>
+        <div class="metric-card" style="cursor: pointer;" onclick="window.location.href='agents.html'">
+            <div class="icon">🤖</div>
+            <div class="value">13</div>
+            <div class="label">Unique AI Agents <span style="font-size: 0.7em; color: #00d4ff;">→ View All</span></div>
         </div>
     </div>
 
@@ -799,7 +831,7 @@
     <!-- All Developers with GitHub Copilot License -->
     <div class="data-table-section">
         <h3>👨‍💻 All Developers with GitHub Copilot License</h3>
-        
+
         <!-- Filter Controls -->
         <div class="filter-controls">
             <div>
@@ -875,6 +907,14 @@
                         <th class="sortable" onclick="sortTable(5)">Skill Set</th>
                         <th class="sortable" onclick="sortTable(6)">SAP Status</th>
                         <th>Champion</th>
+                        <th class="sortable" onclick="sortTable(8)">Awareness</th>
+                        <th class="sortable" onclick="sortTable(9)">Setup</th>
+                        <th class="sortable" onclick="sortTable(10)">Prompting</th>
+                        <th class="sortable" onclick="sortTable(11)">Stack Fit</th>
+                        <th class="sortable" onclick="sortTable(12)">Effectiveness</th>
+                        <th class="sortable" onclick="sortTable(13)">Blockers</th>
+                        <th class="sortable" onclick="sortTable(14)">Total Score</th>
+                        <th>Remarks</th>
                     </tr>
                 </thead>
                 <tbody id="developerTableBody">
@@ -1176,11 +1216,11 @@
             const gradeFilter = document.getElementById('gradeFilter').value;
             const skillFilter = document.getElementById('skillFilter').value;
             const statusFilter = document.getElementById('statusFilter').value;
-            
+
             const table = document.getElementById('developerTable');
             const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
             let visibleCount = 0;
-            
+
             for (let i = 0; i < rows.length; i++) {
                 const cells = rows[i].getElementsByTagName('td');
                 const name = cells[1].textContent.toLowerCase();
@@ -1188,29 +1228,29 @@
                 const grade = cells[3].textContent;
                 const skill = cells[5].textContent;
                 const status = cells[6].textContent;
-                
+
                 let show = true;
-                
+
                 // Search filter
                 if (searchInput && !name.includes(searchInput)) {
                     show = false;
                 }
-                
+
                 // Team filter
                 if (teamFilter && team !== teamFilter) {
                     show = false;
                 }
-                
+
                 // Grade filter
                 if (gradeFilter && grade !== gradeFilter) {
                     show = false;
                 }
-                
+
                 // Skill filter
                 if (skillFilter && !skill.includes(skillFilter)) {
                     show = false;
                 }
-                
+
                 // Status filter
                 if (statusFilter) {
                     if (statusFilter === 'Active' && !status.includes('Active')) {
@@ -1219,14 +1259,14 @@
                         show = false;
                     }
                 }
-                
+
                 rows[i].style.display = show ? '' : 'none';
                 if (show) visibleCount++;
             }
-            
+
             document.getElementById('visibleCount').textContent = visibleCount;
         }
-        
+
         // Clear all filters
         function clearFilters() {
             document.getElementById('searchInput').value = '';
@@ -1236,30 +1276,30 @@
             document.getElementById('statusFilter').value = '';
             filterTable();
         }
-        
+
         // Table Sorting Function
         let sortDirection = {};
-        
+
         function sortTable(columnIndex) {
             const table = document.getElementById('developerTable');
             const tbody = table.getElementsByTagName('tbody')[0];
             const rows = Array.from(tbody.getElementsByTagName('tr'));
             const headers = table.getElementsByTagName('th');
-            
+
             // Toggle sort direction
             sortDirection[columnIndex] = sortDirection[columnIndex] === 'asc' ? 'desc' : 'asc';
-            
+
             // Update header classes
             for (let i = 0; i < headers.length; i++) {
                 headers[i].classList.remove('asc', 'desc');
             }
             headers[columnIndex].classList.add(sortDirection[columnIndex]);
-            
+
             // Sort rows
             rows.sort((a, b) => {
                 let aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
                 let bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
-                
+
                 // Check if numeric
                 if (!isNaN(aValue) && !isNaN(bValue)) {
                     aValue = parseFloat(aValue);
@@ -1268,17 +1308,101 @@
                     aValue = aValue.toLowerCase();
                     bValue = bValue.toLowerCase();
                 }
-                
+
                 if (sortDirection[columnIndex] === 'asc') {
                     return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
                 } else {
                     return aValue < bValue ? 1 : aValue > bValue ? -1 : 0;
                 }
             });
-            
+
             // Re-append sorted rows
             rows.forEach(row => tbody.appendChild(row));
         }
+
+        // Assessment Data from excel data.json - Combined from all sheets
+        const assessmentData = {
+            "navyashree cr": { awareness: 5, setup: 5, prompting: 5, stackFit: 0, effectiveness: 3, blockers: 0, total: 18, remarks: "" },
+            "prathap reddy gulla": { awareness: 10, setup: 10, prompting: 10, stackFit: 15, effectiveness: 6, blockers: 0, total: 51, remarks: "" },
+            "neeraj ughade": { awareness: 5, setup: 0, prompting: 0, stackFit: 0, effectiveness: 0, blockers: 0, total: 5, remarks: "" },
+            "rajiv sen": { awareness: 12, setup: 15, prompting: 15, stackFit: 20, effectiveness: 7, blockers: 0, total: 69, remarks: "" },
+            "ashish singh": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "ABSENT", remarks: "" },
+            "randeep singh": { awareness: 11, setup: 12, prompting: 11, stackFit: 15, effectiveness: 7, blockers: 5, total: 61, remarks: "He gave some blockers that should be aligned and addressed with the existing agents" },
+            "jagana sahu": { awareness: 10, setup: 10, prompting: 10, stackFit: 15, effectiveness: 4, blockers: 0, total: 49, remarks: "Wasnt much aware about the agents and their usage, showed willingness to adapt to genai" },
+            "anil kumar a": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "ABSENT", remarks: "" },
+            "kapil gupta": { awareness: 14, setup: 15, prompting: 8, stackFit: 7, effectiveness: 3, blockers: 0, total: 47, remarks: "" },
+            "suchet kapoor": { awareness: 10, setup: 5, prompting: 10, stackFit: 10, effectiveness: 5, blockers: 0, total: 40, remarks: "" },
+            "priyanka n l": { awareness: 12, setup: 10, prompting: 14, stackFit: 16, effectiveness: 7, blockers: 0, total: 59, remarks: "" },
+            "harshada ashok shinde": { awareness: 11, setup: 16, prompting: 12, stackFit: 18, effectiveness: 7, blockers: 0, total: 64, remarks: "" },
+            "sai kumar ejjipurapu": { awareness: 12, setup: 15, prompting: 10, stackFit: 15, effectiveness: 5, blockers: 0, total: 57, remarks: "Good Knowledge of Gen AI, Agents technologies. But usage are limited." },
+            "ejjipurapu sai kumar": { awareness: 12, setup: 15, prompting: 10, stackFit: 15, effectiveness: 5, blockers: 0, total: 57, remarks: "Good Knowledge of Gen AI, Agents technologies. But usage are limited." },
+            "poornima mohite": { awareness: 10, setup: 8, prompting: 10, stackFit: 5, effectiveness: 2, blockers: 0, total: 35, remarks: "Didn't install the agents. Using AI but through random prompts." },
+            "sruthi r": { awareness: 10, setup: 12, prompting: 10, stackFit: 15, effectiveness: 5, blockers: 0, total: 52, remarks: "Using github copilot but not using Agents." },
+            "polani nagatejesh": { awareness: 10, setup: 15, prompting: 12, stackFit: 10, effectiveness: 5, blockers: 0, total: 52, remarks: "Installed all agents but only using UI5 agents." },
+            "abhilash mishra": { awareness: 10, setup: 10, prompting: 12, stackFit: 12, effectiveness: 5, blockers: 0, total: 49, remarks: "Only used UI5 agents. Now installed other agents." },
+            "manasa rayan": { awareness: 12, setup: 15, prompting: 15, stackFit: 15, effectiveness: 7, blockers: 3, total: 67, remarks: "Using relationship map agent. Aware of installation and setup process." },
+            "sai gowtham": { awareness: 12, setup: 15, prompting: 15, stackFit: 15, effectiveness: 7, blockers: 3, total: 67, remarks: "Using relationship map agent. Aware of installation and setup process." },
+            "charan raj": { awareness: 8, setup: 15, prompting: 12, stackFit: 12, effectiveness: 6, blockers: 0, total: 53, remarks: "Using UI5 agents well but was not aware about different agents." },
+            "pankhudi singh": { awareness: 12, setup: 10, prompting: 10, stackFit: 12, effectiveness: 7, blockers: 0, total: 51, remarks: "Knew about all agents but only worked with UI5 agents." },
+            "hemantha db": { awareness: 12, setup: 10, prompting: 7, stackFit: 12, effectiveness: 7, blockers: 0, total: 48, remarks: "Knew about all agents but only worked with UI5 agents." },
+            "sumit majumdar": { awareness: 10, setup: 10, prompting: 9, stackFit: 10, effectiveness: 2, blockers: 0, total: 41, remarks: "Got license recently but unable to login to enterprise account." },
+            "shruthilaya k": { awareness: 12, setup: 10, prompting: 7, stackFit: 12, effectiveness: 9, blockers: 0, total: 50, remarks: "Only knows about one agent and has been using UI5 coding agent." },
+            "anubha singh": { awareness: 12, setup: 7, prompting: 7, stackFit: 12, effectiveness: 6, blockers: 0, total: 44, remarks: "Got stuck because java was not giving proper code." },
+            "tejanshu chakole": { awareness: 10, setup: 7, prompting: 12, stackFit: 12, effectiveness: 5, blockers: 5, total: 51, remarks: "Has knowledge about github agents but hasn't used customised agents." },
+            "ashlesha ajay patil": { awareness: 0, setup: 0, prompting: 0, stackFit: 0, effectiveness: 0, blockers: 0, total: 0, remarks: "Doesn't have any knowledge about any agents. Setup was not done." },
+            "abhijit thaware": { awareness: 13, setup: 18, prompting: 12, stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "udit chauhan": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "diwakar jaiswal": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "vishal sakpal": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "rahul thakur": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "vivek vamanrao morage": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "vivek morage": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "rohitkumar chaudhari": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "" },
+            "abhishek dolase": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "valli shanmugananthan": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "ashish annaso patil": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "vijay sapkal": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." },
+            "shahbaz alvi": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "" },
+            "simran parkhe": { awareness: "-", setup: "-", prompting: "-", stackFit: "-", effectiveness: "-", blockers: "-", total: "-", remarks: "Installed all the agents in his machine." }
+        };
+
+        // Function to populate assessment data in the table
+        function populateAssessmentData() {
+            const table = document.getElementById('developerTable');
+            const tbody = table.getElementsByTagName('tbody')[0];
+            const rows = tbody.getElementsByTagName('tr');
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                const name = cells[1].textContent.trim().toLowerCase();
+
+                // Add empty cells for assessment columns if not present
+                if (cells.length < 16) {
+                    for (let j = 0; j < 8; j++) {
+                        const td = document.createElement('td');
+                        td.textContent = '-';
+                        rows[i].appendChild(td);
+                    }
+                }
+
+                // Look up assessment data
+                const assessment = assessmentData[name];
+                if (assessment) {
+                    cells[8].textContent = assessment.awareness;
+                    cells[9].textContent = assessment.setup;
+                    cells[10].textContent = assessment.prompting;
+                    cells[11].textContent = assessment.stackFit;
+                    cells[12].textContent = assessment.effectiveness;
+                    cells[13].textContent = assessment.blockers;
+                    cells[14].textContent = assessment.total;
+                    cells[15].textContent = assessment.remarks || '-';
+                    cells[15].title = assessment.remarks || '';
+                }
+            }
+        }
+
+        // Run on page load
+        document.addEventListener('DOMContentLoaded', populateAssessmentData);
     </script>
 </body>
 </html>
