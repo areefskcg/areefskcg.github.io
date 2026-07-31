@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Java Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Development Agent</p>
+    <h1>Java Agent</h1>
+    <p class="lead">
+      A specialized assistant for CTO WebClient Java development — Business Object creation,
+      code generation, validation, refactoring, and debugging.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> JavaAgent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Layer</strong> Java / Spring Boot</span>
+      <span class="chip"><strong>Tools</strong> read, edit, search, execute, agent</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    The Java Agent is a full-spectrum Java development assistant for the CTO WebClient backend.
+    It provides accurate guidance for creating Business Objects, generating services, controllers
+    and mappers, validating and fixing code, refactoring, debugging, and writing tests. It always
+    references project instruction files for CTO-specific patterns and conventions.
+  </p>
+
+  <h2>Key Capabilities</h2>
+  <ul>
+    <li><strong>Business Object creation</strong> — Builds layered-architecture BO components that integrate with the CTO Service Layer APIs.</li>
+    <li><strong>C++ Documentation &rarr; Java code generation</strong> — Reads generated C++ documentation and produces equivalent Java implementations.</li>
+    <li><strong>Smart BO creation</strong> — Creates BOs with business logic migrated from C++ and passes context downstream to UI5.</li>
+    <li><strong>General code generation</strong> — Services, controllers, DAOs, mappers, Feign clients, configs, exception handlers, and utilities.</li>
+    <li><strong>Code validation &amp; auto-fix</strong> — Detects issues, classifies severity, generates fixes, and produces structured Markdown reports.</li>
+    <li><strong>Refactoring &amp; debugging</strong> — Improves structure, extracts methods/classes, and diagnoses compilation, runtime, wiring, and SQL errors.</li>
+    <li><strong>Testing</strong> — Delegates to the Java Test Generator to produce Spock specifications and JUnit 5 tests.</li>
+  </ul>
+
+  <h2>Workflow Matrix</h2>
+  <p>The agent detects a single workflow from the user's prompt and executes only that workflow.</p>
+  <table>
+    <thead><tr><th>User intent</th><th>Trigger keywords</th><th>Workflow</th></tr></thead>
+    <tbody>
+      <tr><td>Create new BO</td><td>"create BO", "new business object"</td><td>BO Creation Workflow</td></tr>
+      <tr><td>Smart BO continuation</td><td>"MigrationContext", "Continue Smart BO"</td><td>Smart BO Continuation Workflow</td></tr>
+      <tr><td>Generate from docs</td><td>"generate from documentation", "convert docs to Java"</td><td>C++ Docs &rarr; Java Workflow</td></tr>
+      <tr><td>Review / validate code</td><td>"review", "validate", "analyze file"</td><td>Code Review Workflow</td></tr>
+      <tr><td>Fix code</td><td>"fix this", "auto-fix"</td><td>Code Fix Workflow</td></tr>
+      <tr><td>Refactor</td><td>"refactor", "extract method"</td><td>Refactoring Workflow</td></tr>
+      <tr><td>Debug</td><td>"debug", "why is this failing"</td><td>Debug Workflow</td></tr>
+      <tr><td>Write tests</td><td>"write tests", "add unit tests"</td><td>Delegates to Java Test Generator</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Handoffs</h2>
+  <table>
+    <thead><tr><th>Target agent</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>C++ to Java Migration</td><td>Extract validation, calculation, and business logic from the C++ codebase as a MigrationContext JSON.</td></tr>
+      <tr><td>UI5 Coding Agent</td><td>Create the UI5 frontend for a BO using the JavaBoContext (field bindings, validations, API endpoints).</td></tr>
+      <tr><td>Java Test Generator</td><td>Generate Spock / Groovy tests for the service class.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Outputs</h2>
+  <ul>
+    <li>Complete BO stack: domain classes, DAOs, services, controllers, mappers, Feign clients.</li>
+    <li>Validation reports saved as <code>{ClassName}-ValidationReport.md</code> under a documentation folder.</li>
+    <li>Structured JavaBoContext JSON for handing off to the UI5 layer.</li>
+  </ul>
+
+  <div class="callout success">
+    <p class="title">Smart BO Pipeline</p>
+    <p>When a MigrationContext is received, the agent always continues the pipeline by generating Java BO files and handing off to the UI5 Coding Agent — it never stops after generating Java files.</p>
+  </div>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Java Agent</p></footer>
+</main>
+</body>
+</html>

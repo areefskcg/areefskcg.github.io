@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Epic DeepSearch Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Knowledge Agent</p>
+    <h1>Epic DeepSearch Agent</h1>
+    <p class="lead">
+      A deep knowledge-base search agent that finds every piece of information related to a feature,
+      keyword, or epic, then maps desktop patterns to the web client architecture and generates
+      BRD, HLD, LLD documents and JIRA-ready user stories.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> EPIC deepsearch</span>
+      <span class="chip"><strong>Model</strong> Claude Opus 4.8</span>
+      <span class="chip"><strong>Mode</strong> Autonomous</span>
+      <span class="chip"><strong>Tools</strong> read, search, edit, execute, agent, todo</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent performs an exhaustive knowledge-base search, reverse-engineering, web-migration
+    planning, and documentation pipeline. After a single prompt (e.g., "create user story for
+    landed cost"), it runs all stages fully autonomously — no further user interaction required.
+  </p>
+
+  <h2>End-to-End Pipeline</h2>
+  <ol>
+    <li><strong>Search knowledge base</strong> — Search the pre-analyzed knowledge base and existing analysis artifacts to find impact maps, architecture reviews, schemas, field mappings, and existing BRD/HLD/LLD documents.</li>
+    <li><strong>Extract &amp; consolidate</strong> — Deep-read documents to extract features, business logic, dependencies, tables, enums, APIs, fields, and validation rules.</li>
+    <li><strong>Supplement from codebase</strong> — Targeted searches of the raw codebase only where the knowledge base lacks specific detail.</li>
+    <li><strong>Web migration mapping</strong> — Apply the Implementation Flow Change Rule Book to map desktop patterns to UI5 + Spring Boot patterns, and the Visual Style Guide for UI specs.</li>
+    <li><strong>Generate documents</strong> — Produce HLD, LLD, and BRD with web-client implementation architecture.</li>
+    <li><strong>Create user stories</strong> — Generate JIRA-ready stories, each with a Web Implementation Blueprint, Visual Design Specification, and Localization &amp; i18n Specification.</li>
+  </ol>
+
+  <div class="callout">
+    <p class="title">Knowledge Base First</p>
+    <p>The agent always searches the pre-analyzed knowledge base before touching the raw codebase. The raw codebase is a supplement for specific missing details — not the primary source — avoiding full exhaustive scans.</p>
+  </div>
+
+  <h2>Key Rules</h2>
+  <table>
+    <thead><tr><th>Rule</th><th>Summary</th></tr></thead>
+    <tbody>
+      <tr><td>Knowledge base first</td><td>Search consolidated knowledge before the raw codebase.</td></tr>
+      <tr><td>Overwrite, never version</td><td>Overwrite existing output files rather than creating v2/v3 copies.</td></tr>
+      <tr><td>Session memory for technical values</td><td>Save a structured technical summary and reuse exact values when writing stories.</td></tr>
+      <tr><td>Rule Book &amp; Style Guide loading</td><td>Load both reference documents before generating any output.</td></tr>
+      <tr><td>Adaptive story structure</td><td>Omit irrelevant sections entirely — never pad with "N/A" placeholders.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Web Implementation Blueprint</h2>
+  <p>Every user story includes a blueprint bridging desktop analysis with web-client guidance, covering:</p>
+  <ul>
+    <li>Architecture layers (frontend view/fragment, controller, REST API, service, BO, data access).</li>
+    <li>UI control mapping (desktop control &rarr; UI5 control).</li>
+    <li>Fragment reuse strategy and controller base class.</li>
+    <li>Validation strategy (client vs server).</li>
+    <li>Applicable rule-book rule numbers.</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Epic DeepSearch Agent</p></footer>
+</main>
+</body>
+</html>

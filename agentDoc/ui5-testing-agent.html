@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UI5 Test Cases Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Testing Agent</p>
+    <h1>UI5 Test Cases Agent</h1>
+    <p class="lead">
+      Generates comprehensive test cases for UI5 components, widgets, controllers, and business
+      objects following CTO platform QUnit patterns and conventions.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> UI5 Test Cases Agent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Framework</strong> QUnit / Sinon</span>
+      <span class="chip"><strong>Runner</strong> Karma</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent understands the CTO platform widget system, controller hierarchy, fragment patterns,
+    and business-object structures. It generates QUnit test cases that follow established testing
+    conventions and project-specific architecture.
+  </p>
+
+  <h2>Core Testing Capabilities</h2>
+  <div class="grid">
+    <div class="card"><h3>Widget Tests</h3><p>Property, aggregation, and event testing with metadata validation, async handling, and memory-leak detection.</p></div>
+    <div class="card"><h3>Controller Tests</h3><p>Lifecycle methods, data loading, navigation/routing, and CRUD operation testing via the BO API.</p></div>
+    <div class="card"><h3>Custom Control Tests</h3><p>Metadata validation, renderer/DOM structure validation, and event-handling tests.</p></div>
+    <div class="card"><h3>Integration Tests</h3><p>Fragment-controller integration, SDK simulation, OData binding, and cross-widget communication.</p></div>
+  </div>
+
+  <h2>Test Structure &amp; Conventions</h2>
+  <ul>
+    <li><strong>Module pattern</strong> — <code>defineWidgetTest()</code> for widgets, <code>defineTest()</code> for controllers.</li>
+    <li><strong>Sandbox</strong> — Create a Sinon sandbox in <code>beforeEach</code>, restore in <code>afterEach</code>.</li>
+    <li><strong>Stubs</strong> — Use <code>sandbox.stub(obj, "method")</code>; required for inherited base-class methods.</li>
+    <li><strong>Async</strong> — Use <code>.returns(Promise.resolve())</code> rather than <code>.resolves()</code>.</li>
+  </ul>
+
+  <div class="callout warning">
+    <p class="title">Forbidden Patterns</p>
+    <p>The agent never generates <code>.callsFake()</code>, <code>try/catch</code> for exception testing, or real <code>setTimeout()</code> with async — it uses <code>.returns()</code>, <code>assert.throws()</code>/<code>assert.rejects()</code>, and fake timers instead.</p>
+  </div>
+
+  <h2>Output Location</h2>
+  <p>Generated test files mirror the source directory structure under the QUnit test tree:</p>
+  <pre><code>Source: node/client/src/content/{feature}/bo{BoName}/
+Tests:  node/client/test/qunit/testcases/content/{feature}/bo{BoName}/</code></pre>
+
+  <h2>Boundaries</h2>
+  <ul>
+    <li>Generates test cases only — does not write or modify production code.</li>
+    <li>Does not fix failing tests; reports issues and suggests solutions.</li>
+    <li>Does not configure build systems or CI/CD pipelines beyond test registration.</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; UI5 Test Cases Agent</p></footer>
+</main>
+</body>
+</html>

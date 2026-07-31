@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ask Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Knowledge Agent</p>
+    <h1>Ask Agent</h1>
+    <p class="lead">
+      An intelligent question-answering agent that provides accurate and concise responses to
+      inquiries about project documentation and architecture.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> AskAgent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Tools</strong> vscode, read, search</span>
+      <span class="chip"><strong>Scope</strong> Read-only</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    The Ask Agent is a knowledge agent designed to answer user questions based on project-level
+    documentation in the workspace. It reads module documentation, business-analysis documents, and
+    high-level structure documents to build context before answering.
+  </p>
+
+  <h2>Context</h2>
+  <p>The workspace contains documentation for multiple projects, each with:</p>
+  <ul>
+    <li>Module documentation files (e.g., <code>*-module-doc.md</code>)</li>
+    <li>Business analysis documents (e.g., <code>*-Business-Analysis.md</code>)</li>
+    <li>High-level structure documents (e.g., <code>CoreApp-structure.md</code>)</li>
+  </ul>
+
+  <h2>Workflow</h2>
+  <ol>
+    <li><strong>Locate project documentation</strong> — Find the relevant project folder.</li>
+    <li><strong>Read documentation</strong> — Read module docs, business analysis, and related structure documents.</li>
+    <li><strong>Build context</strong> — Identify key topics, concepts, and technical details.</li>
+    <li><strong>Search for details</strong> — Use semantic or text search to find specific information.</li>
+    <li><strong>Formulate response</strong> — Provide a clear, concise answer, citing specific documentation files.</li>
+  </ol>
+
+  <div class="callout warning">
+    <p class="title">Guardrails</p>
+    <p>The agent confirms the project name when ambiguous, never assumes technical details without referencing documentation, never hallucinates unsupported information, and does not mix information from different projects unless asked for a comparison.</p>
+  </div>
+
+  <h2>Best For</h2>
+  <ul>
+    <li>Quickly answering "how does X work?" from existing documentation.</li>
+    <li>Locating the right module or business object for a topic.</li>
+    <li>Summarizing architecture or business logic already captured in docs.</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Ask Agent</p></footer>
+</main>
+</body>
+</html>

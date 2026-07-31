@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Code Review Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Review Agent</p>
+    <h1>Code Review Agent</h1>
+    <p class="lead">
+      A full-stack (frontend + backend) code review agent for the CTO platform. It validates
+      structure, correctness, architecture compliance, security, and performance, then produces a
+      detailed report with an interactive fix-selection list.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Scope</strong> Frontend + Backend</span>
+      <span class="chip"><strong>Output</strong> Markdown report</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    The Code Review Agent reviews all files in a pull request based on the scope defined by the
+    user. It detects the language of each file first, loads only the matching instruction file(s),
+    and produces a comprehensive review covering violations, severity, explanations, and
+    prioritized fix suggestions.
+  </p>
+
+  <h2>Review Scoping</h2>
+  <p>Before any review, the agent determines the review mode to avoid unnecessary full-file passes:</p>
+  <table>
+    <thead><tr><th>Condition</th><th>Review mode</th></tr></thead>
+    <tbody>
+      <tr><td>Whole file(s) / PR-level review</td><td>Full Review — exhaustive multi-pass</td></tr>
+      <tr><td>Named specific function(s)</td><td>Function-Scoped Review — fast path</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Supported Languages</h2>
+  <table>
+    <thead><tr><th>Language / framework</th><th>Instruction file loaded</th></tr></thead>
+    <tbody>
+      <tr><td>Java</td><td>Java instructions</td></tr>
+      <tr><td>Java + Spring Boot</td><td>Java + Spring Boot instructions</td></tr>
+      <tr><td>JavaScript</td><td>JavaScript instructions</td></tr>
+      <tr><td>UI5</td><td>UI5 instructions</td></tr>
+      <tr><td>C / C++</td><td>C++ instructions</td></tr>
+      <tr><td>QUnit test files</td><td>QUnit instructions</td></tr>
+    </tbody>
+  </table>
+  <p>Only instruction files matching detected languages are loaded — never all of them.</p>
+
+  <h2>Severity Levels</h2>
+  <table>
+    <thead><tr><th>Severity</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td>Blocker</td><td>Security vulnerabilities, crashes, data loss, authentication bypass.</td></tr>
+      <tr><td>Critical</td><td>Logic errors, resource leaks, concurrency issues, injection risks.</td></tr>
+      <tr><td>Major</td><td>Performance issues, bad patterns, missing error handling, API misuse.</td></tr>
+      <tr><td>Minor</td><td>Unused imports/variables, naming violations, dead code, style issues.</td></tr>
+      <tr><td>Info</td><td>Style suggestions, alternative approaches, readability improvements.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Multi-Pass Exhaustive Strategy</h2>
+  <ul>
+    <li><strong>Pass 1</strong> — Full sequential review of every line, accumulating all findings.</li>
+    <li><strong>Pass 2</strong> — Verification sweep for missed unused imports, dead code, and naming/length violations.</li>
+    <li><strong>Pass 3</strong> — Final reconciliation for large files to ensure every logical block was checked.</li>
+  </ul>
+
+  <div class="callout">
+    <p class="title">Determinism</p>
+    <p>The agent follows a fixed evaluation order (imports, declarations, methods) and severity checklist so two runs on the same unchanged file produce the same findings in the same order.</p>
+  </div>
+
+  <h2>Outputs &amp; Interactive Fixes</h2>
+  <ul>
+    <li>A detailed review report saved to <code>/code_review_reports</code>.</li>
+    <li>An interactive fix-selection list presented in chat — the user selects which fixes to apply.</li>
+    <li>Applied changes logged to <code>&lt;filename&gt;_coderev_log.md</code> in the reviewed file's parent directory.</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Code Review Agent</p></footer>
+</main>
+</body>
+</html>

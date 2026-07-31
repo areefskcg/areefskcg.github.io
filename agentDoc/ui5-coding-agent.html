@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UI5 Coding Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Development Agent</p>
+    <h1>UI5 Coding Agent</h1>
+    <p class="lead">
+      A specialized assistant for UI5 development in the CTO platform environment — building
+      modern web applications that integrate with CTO backend services.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> UI5 Coding Agent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Layer</strong> UI5 Frontend</span>
+      <span class="chip"><strong>UI5</strong> 1.120.27</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent is specialized for UI5 development within the CTO platform. It provides accurate
+    guidance for building views, controllers, fragments, custom widgets, and controls that
+    integrate with CTO backend services, always referencing project pattern files for
+    conventions and examples.
+  </p>
+
+  <h2>Key Capabilities</h2>
+  <ul>
+    <li><strong>UI generation</strong> — Generates views, controllers, and fragments following CTO platform patterns.</li>
+    <li><strong>API bindings &amp; validation</strong> — Creates API endpoint bindings and client-side validations.</li>
+    <li><strong>Custom widgets &amp; controls</strong> — Implements widgets and controls extending the standard UI5 control library.</li>
+    <li><strong>Smart BO Creation</strong> — Receives JavaBoContext from the Java Agent and generates the complete frontend stack automatically.</li>
+    <li><strong>Full UI5 stack</strong> — API services, detail views, fragments, and i18n files.</li>
+  </ul>
+
+  <h2>Focus Areas</h2>
+  <div class="grid">
+    <div class="card"><h3>UI5 Framework</h3><p>Component-based architecture, MVC/MVP, one-way &amp; two-way data binding, routing, and responsive design.</p></div>
+    <div class="card"><h3>Platform Integration</h3><p>Service Layer API consumption, OData integration, authentication, and business object manipulation.</p></div>
+    <div class="card"><h3>Performance</h3><p>Lazy loading, memory management, bundle optimization, and caching strategies.</p></div>
+    <div class="card"><h3>Code Quality</h3><p>UI5 coding guidelines, robust error handling, and clean, readable structure.</p></div>
+  </div>
+
+  <h2>Architecture Context</h2>
+  <table>
+    <thead><tr><th>Aspect</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>UI5 Version</td><td>1.120.27 (Commercial)</td></tr>
+      <tr><td>Core namespaces</td><td><code>acme.apps.player.*</code>, <code>acme.content.*</code>, <code>acme.flp.*</code></td></tr>
+      <tr><td>Module system</td><td>AMD with <code>sap.ui.define</code></td></tr>
+      <tr><td>Build system</td><td>Custom Grunt-based pipeline with UI5 tooling</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Controller Hierarchy</h3>
+  <pre><code>BaseContentController
+├── BaseContentDetailController
+│   ├── BasePurchaseDetail
+│   ├── BaseSalesDetail
+│   └── BaseInventoryDetail
+├── BaseContentListController
+├── BaseContentNoeController
+└── BaseContentWizardController</code></pre>
+
+  <h2>Smart BO Creation (Automatic)</h2>
+  <p>When receiving a <code>JavaBoContext</code> from the Java Agent, the agent runs without asking questions and generates the entire frontend stack:</p>
+  <ul>
+    <li><code>Api{Feature}.js</code> — API endpoint definitions</li>
+    <li><code>Detail.js</code> controller — with client validation rules</li>
+    <li><code>{Feature}Widget.js</code> — widget with metadata validation</li>
+    <li><code>*.detailView.json</code> and <code>*GeneralTab.fragment.json</code> — view &amp; form fragments</li>
+    <li><code>i18n.properties</code> and required registration files</li>
+  </ul>
+
+  <h2>Handoffs</h2>
+  <table>
+    <thead><tr><th>Target agent</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>UI5 Test Cases Agent</td><td>Create QUnit test cases for the implemented UI5 component.</td></tr>
+      <tr><td>Java Agent</td><td>Receive Java BO context to generate the matching frontend.</td></tr>
+    </tbody>
+  </table>
+
+  <footer><p>CTO Custom Agents Documentation &middot; UI5 Coding Agent</p></footer>
+</main>
+</body>
+</html>

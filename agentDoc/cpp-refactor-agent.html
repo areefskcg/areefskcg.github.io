@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>C++ Refactor Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Development Agent</p>
+    <h1>C++ Refactor Agent</h1>
+    <p class="lead">
+      A bi-directional C++ refactoring agent for the CTO platform — extracts business logic from
+      the presentation (PA) layer to the business-object (PO) layer, or wraps PO logic into a PA
+      layer with UI scaffolding. Auto-detects file type and refactoring direction.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> CppRefactor</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Layer</strong> C++</span>
+      <span class="chip"><strong>Tools</strong> editFiles, search, read, execute</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent specializes in PA&harr;PO layer refactoring within the CTO platform C++ codebase.
+    It reads every line of large source files (routinely 5,000&ndash;15,000+ lines), determines the
+    refactoring direction, and transforms code while preserving business logic, transaction
+    boundaries, and error-handling patterns.
+  </p>
+
+  <div class="callout warning">
+    <p class="title">Mandatory Full-File Reading Protocol</p>
+    <p>The agent must read every single line of every referenced source file in sequential ~500-line chunks. Skipping, summarizing, or sampling would cause missed business logic and broken refactoring.</p>
+  </div>
+
+  <h2>Refactoring Directions</h2>
+  <h3>PA &rarr; PO (Extract Business Logic)</h3>
+  <ul>
+    <li>Removes UI code: forms, grids, item/form calls, color/font/style operations, and form callbacks.</li>
+    <li>Preserves business logic: data-access operations, queries, calculations, validations, state checks, and transaction management.</li>
+    <li>Creates bridge methods on the business-object class as replacements for free functions that mix UI and logic.</li>
+    <li>Converts grid cell reads to data-access reads and form variables to class member variables.</li>
+  </ul>
+  <h3>PO &rarr; PA (Create UI Wrapper)</h3>
+  <ul>
+    <li>Generates PA scaffolding: form draw, init, close, button, change, attribute, security, and grid callbacks.</li>
+    <li>Creates form variable setup and grid bindings mapping data-access columns to grid columns.</li>
+    <li>Generates grid population code and wires business-object methods into button/menu callbacks.</li>
+  </ul>
+
+  <h2>File Detection &amp; Direction Resolution</h2>
+  <table>
+    <thead><tr><th>User says</th><th>File detected</th><th>Direction</th></tr></thead>
+    <tbody>
+      <tr><td>"extract business logic"</td><td>PA</td><td>PA &rarr; PO</td></tr>
+      <tr><td>"add UI layer" / "create PA"</td><td>PO</td><td>PO &rarr; PA</td></tr>
+      <tr><td>"refactor" (no direction)</td><td>PA</td><td>PA &rarr; PO (default)</td></tr>
+      <tr><td>"refactor" (no direction)</td><td>PO</td><td>PO &rarr; PA (default)</td></tr>
+      <tr><td>Unclear</td><td>&mdash;</td><td>Ask the user</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Code Quality Guarantees</h2>
+  <ul>
+    <li>Preserves error-handling and return patterns and maintains transaction boundaries.</li>
+    <li>Retains version feature flags and does not alter database query logic, joins, or WHERE clauses.</li>
+    <li>Enforces coding standards: naming, memory safety, Allman braces, and functions &le; 100 lines.</li>
+  </ul>
+
+  <h2>Code Review Handoff</h2>
+  <p>
+    After producing the refactored file, the agent automatically hands off to the Code Review agent,
+    which validates C/C++ standards (error handling, naming, memory safety, no UI residue, function size).
+    Review reports are saved to <code>/code_review_reports/</code>.
+  </p>
+
+  <footer><p>CTO Custom Agents Documentation &middot; C++ Refactor Agent</p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E2E Test Case Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Testing Agent</p>
+    <h1>E2E Test Case Agent</h1>
+    <p class="lead">
+      Creates end-to-end test cases spanning entire epics by analyzing existing user-story test
+      case documents for the CTO platform.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> E2ETestCaseAgent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Output</strong> Word (.docx)</span>
+      <span class="chip"><strong>Format</strong> Zephyr</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent creates comprehensive end-to-end test cases that span an entire epic's workflow. It
+    reads all user-story test case documents in a folder, understands the business flow across
+    stories, and produces E2E tests covering the happy path, alternate flows, and edge cases.
+  </p>
+
+  <h2>Workflow</h2>
+  <ol>
+    <li><strong>Collect input</strong> — Ask for the folder path containing user-story test case documents.</li>
+    <li><strong>Read all documents</strong> — Extract story IDs, business functionality, test steps, preconditions, and expected outcomes.</li>
+    <li><strong>Build flow map</strong> — Identify how stories connect, the logical sequence, dependencies, and the happy path.</li>
+    <li><strong>Create E2E test cases</strong> — Generate tests based on the epic's complexity and alternate flows.</li>
+  </ol>
+
+  <h2>E2E Test Types</h2>
+  <table>
+    <thead><tr><th>Type</th><th>When to include</th></tr></thead>
+    <tbody>
+      <tr><td>Happy Path</td><td>Always required — the main successful flow.</td></tr>
+      <tr><td>Alternate Flows</td><td>For each significant business variation.</td></tr>
+      <tr><td>Edge Cases</td><td>When critical edge scenarios exist.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warning">
+    <p class="title">Mandatory Output</p>
+    <p>The agent always creates a properly formatted Word document (<code>.docx</code>) saved to <code>/test_cases/[EPIC-ID]-E2E-TestCases.docx</code> — never just chat output.</p>
+  </div>
+
+  <h2>What Makes a Good E2E Test</h2>
+  <ul>
+    <li><strong>Spans multiple user stories</strong> — Covers the complete business process.</li>
+    <li><strong>Realistic scenario</strong> — Reflects actual user workflows.</li>
+    <li><strong>Traceable</strong> — Each step maps back to its originating user story.</li>
+    <li><strong>Self-contained</strong> — Can be executed independently.</li>
+    <li><strong>Meaningful</strong> — Tests integration between features, not just individual features.</li>
+  </ul>
+
+  <h2>Quality Guidelines</h2>
+  <p>When creating E2E test cases, the agent applies additional quality guidelines for comprehensive coverage:</p>
+  <ul>
+    <li><strong>Localization testing</strong> — Dedicated alternate flows for key localizations when the epic has country-specific behavior.</li>
+    <li><strong>New fields &amp; forms</strong> — Verifies new fields function correctly within the business flow.</li>
+    <li><strong>Special functions</strong> — Document copy operations, serial/batch tracking, and BOM handling across the flow.</li>
+    <li><strong>Concurrent testing</strong> — Multiple clients operating on the same flow simultaneously.</li>
+    <li><strong>Cross-function testing</strong> — Explicit notes when the flow crosses module boundaries.</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; E2E Test Case Agent</p></footer>
+</main>
+</body>
+</html>

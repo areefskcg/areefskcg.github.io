@@ -1,0 +1,257 @@
+/* =========================================================
+   CTO Custom Agents — Documentation styles
+   Shared stylesheet for all agent documentation pages.
+   ========================================================= */
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --accent: #0b5cff;
+  --accent-hover: #0847c9;
+  --accent-weak: #e8f0ff;
+
+  --bg: #ffffff;
+  --bg-alt: #f6f8fa;
+  --bg-elev: #ffffff;
+  --text: #1b1f24;
+  --text-muted: #5a6472;
+  --border: #d8dee4;
+  --shadow: 0 1px 2px rgba(27, 31, 36, 0.08), 0 3px 8px rgba(27, 31, 36, 0.06);
+
+  --info: #0b5cff;
+  --info-bg: #eaf1ff;
+  --warning: #9a6700;
+  --warning-bg: #fff5d6;
+  --success: #1a7f37;
+  --success-bg: #e6f4ea;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --maxw: 960px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4d8dff;
+    --accent-hover: #6ea1ff;
+    --accent-weak: #16233d;
+    --bg: #0d1117;
+    --bg-alt: #161b22;
+    --bg-elev: #161b22;
+    --text: #e6edf3;
+    --text-muted: #9aa5b1;
+    --border: #30363d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 3px 8px rgba(0, 0, 0, 0.3);
+    --info: #4d8dff;
+    --info-bg: #12233f;
+    --warning: #d9a441;
+    --warning-bg: #2a2313;
+    --success: #3fb950;
+    --success-bg: #12261a;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.25rem;
+}
+.topbar-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.brand .badge {
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.1rem 0.5rem;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+.topbar nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.topbar nav a { color: var(--text-muted); text-decoration: none; }
+.topbar nav a:hover { color: var(--accent); }
+
+/* ---------- Headings ---------- */
+h1, h2, h3 { line-height: 1.25; color: var(--text); }
+h1 { font-size: 2rem; margin: 0 0 0.35rem; }
+h2 {
+  font-size: 1.35rem;
+  margin: 2.25rem 0 0.85rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 { font-size: 1.08rem; margin: 1.4rem 0 0.5rem; }
+
+p { margin: 0 0 1rem; }
+a { color: var(--accent); }
+a:hover { text-decoration: underline; }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--bg-alt);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+pre {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+
+ul, ol { padding-left: 1.35rem; }
+li { margin: 0.3rem 0; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--accent-weak), transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.hero .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.4rem;
+}
+.hero .lead {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin: 0.4rem 0 0;
+}
+
+/* ---------- Meta chips ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 0; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.chip strong { color: var(--text); font-weight: 600; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.grid .card h3 { margin-top: 0; }
+.grid .card p { margin-bottom: 0; color: var(--text-muted); font-size: 0.92rem; }
+.card-link { text-decoration: none; color: inherit; display: block; transition: border-color 0.15s ease, transform 0.15s ease; }
+.card-link:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+.card-link .tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1.25rem;
+  font-size: 0.92rem;
+}
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+th { background: var(--bg-alt); font-weight: 600; }
+tbody tr:nth-child(even) { background: var(--bg-alt); }
+
+/* ---------- Callouts ---------- */
+.callout {
+  border-left: 4px solid var(--info);
+  background: var(--info-bg);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+}
+.callout.warning { border-left-color: var(--warning); background: var(--warning-bg); }
+.callout.success { border-left-color: var(--success); background: var(--success-bg); }
+.callout p:last-child { margin-bottom: 0; }
+.callout .title { font-weight: 700; margin-bottom: 0.25rem; }
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Back link ---------- */
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.back:hover { color: var(--accent); }

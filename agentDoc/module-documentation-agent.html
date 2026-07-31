@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Module Level Documentation Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Documentation Agent</p>
+    <h1>Module Level Documentation Agent</h1>
+    <p class="lead">
+      Generates comprehensive module-level documentation by analyzing codebases — extracting core
+      and supporting business objects, data flow, functional flow, and database information, plus a
+      validation report.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> Module Level Documentation Agent</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Output</strong> Markdown</span>
+      <span class="chip"><strong>Multi-language</strong> C++, Java, JS, SQL</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent analyzes software codebases and generates comprehensive module documentation in
+    Markdown, including detailed business-object analysis, data flows, functional flows, database
+    schema information, and validation reports.
+  </p>
+
+  <h2>Workflow</h2>
+  <ol>
+    <li><strong>Confirm scope</strong> — Module name/path, primary languages, boundaries, and codebase/schema locations.</li>
+    <li><strong>Analyze codebase</strong> — Walk the folder structure, identify source files, and map class/function hierarchies.</li>
+    <li><strong>Identify business objects</strong> — Distinguish core (transaction-level) BOs from supporting (child/lookup) BOs.</li>
+    <li><strong>Extract data flow</strong> — Trace data from UI &rarr; Service Layer &rarr; API &rarr; Database.</li>
+    <li><strong>Document functional flow</strong> — Identify major workflows (Add, Update, Delete, Approve) and their business rules.</li>
+    <li><strong>Extract database information</strong> — Tables, key columns, relationships, constraints, and stored procedures.</li>
+    <li><strong>Generate documentation</strong> — Produce the main document and a validation report.</li>
+  </ol>
+
+  <h2>Output Files</h2>
+  <table>
+    <thead><tr><th>File</th><th>Contents</th></tr></thead>
+    <tbody>
+      <tr><td><code>{module}_documentation.md</code></td><td>Business overview, BOs, functions, data &amp; functional flows, schema, business rules, dependencies, and inferred requirements.</td></tr>
+      <tr><td><code>{module}_validation_report.md</code></td><td>Coverage analysis, quality metrics, completeness percentage, gaps, and improvement recommendations.</td></tr>
+    </tbody>
+  </table>
+  <p>Both files are saved to the <code>reports_module/</code> folder.</p>
+
+  <h2>Multi-Language Support</h2>
+  <ul>
+    <li><strong>C++/C layer</strong> — Core business logic and validation rules.</li>
+    <li><strong>Java layer</strong> — Service APIs and transformations.</li>
+    <li><strong>UI5 / JavaScript layer</strong> — User workflows and form handling.</li>
+    <li><strong>SQL layer</strong> — Data persistence and relationships.</li>
+  </ul>
+
+  <div class="callout success">
+    <p class="title">Success Criteria</p>
+    <p>Main documentation covers module purpose, all BOs, detailed flows, complete schema, business rules, and 3&ndash;5 key workflows. The validation report targets &gt;85% completeness with gap identification.</p>
+  </div>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Module Level Documentation Agent</p></footer>
+</main>
+</body>
+</html>

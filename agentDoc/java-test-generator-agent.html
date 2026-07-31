@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Java Test Generator — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Testing Agent</p>
+    <h1>Java Test Generator</h1>
+    <p class="lead">
+      Generates comprehensive Spock / Groovy test cases for Spring Boot Java service classes
+      following CTO platform patterns, then validates them via logical trace-through and produces
+      a verification report.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> Java Test Generator</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Framework</strong> Spock / Groovy</span>
+      <span class="chip"><strong>Tools</strong> read, editFiles, search</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent reads the full service code, analyzes every method, creates exhaustive test cases
+    following established patterns, validates them internally via a logical walkthrough, and
+    produces a verification report — all without executing the test suite.
+  </p>
+
+  <h2>When to Use</h2>
+  <ul>
+    <li>Generate a full Spock test spec for a Java service class.</li>
+    <li>Create missing test cases for uncovered service methods.</li>
+    <li>Validate existing test files against the service code for correctness.</li>
+    <li>Produce a coverage and validation report without running tests.</li>
+  </ul>
+
+  <h2>Five-Phase Pipeline</h2>
+  <table>
+    <thead><tr><th>Phase</th><th>Activity</th></tr></thead>
+    <tbody>
+      <tr><td>1. Read</td><td>Read full service code and instruction file — every line, no skipping.</td></tr>
+      <tr><td>2. Analyze</td><td>Classify every method, map dependencies, and identify branches.</td></tr>
+      <tr><td>3. Generate</td><td>Produce a Spock test file following all instruction patterns.</td></tr>
+      <tr><td>4. Validate</td><td>Trace random inputs through the service logic and compare to test assertions.</td></tr>
+      <tr><td>5. Report</td><td>Output a verification report with pass / fixed / attention per method.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Analysis Detail</h2>
+  <ul>
+    <li><strong>Dependency inventory</strong> — Table of every injected field and inherited base dependency.</li>
+    <li><strong>Method classification</strong> — Visibility, inherited calls, DAOs used, branch count, and test instance type.</li>
+    <li><strong>Branch mapping</strong> — Every conditional branch becomes at least one test case.</li>
+    <li><strong>Risk assessment</strong> — Flags complex DAO chaining, mixed inherited/local logic, and subtle differences.</li>
+  </ul>
+
+  <h2>Validation Classification</h2>
+  <table>
+    <thead><tr><th>Result</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>PASS</td><td>Trace confirms all assertions are correct.</td></tr>
+      <tr><td>FIXED</td><td>A mismatch was found and the test was corrected.</td></tr>
+      <tr><td>ATTENTION</td><td>Correctness cannot be confirmed; flagged for manual review.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p class="title">Non-Executing Validation</p>
+    <p>Phase 4 is a logical trace-through — the agent mentally executes the service method with random inputs and compares outcomes to assertions rather than running the code.</p>
+  </div>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Java Test Generator</p></footer>
+</main>
+</body>
+</html>

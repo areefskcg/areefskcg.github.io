@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Defect Analyst Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Analysis Agent</p>
+    <h1>Defect Analyst Agent</h1>
+    <p class="lead">
+      A defect analysis and fix-recommendation agent for the CTO platform. It helps developers
+      understand code, find root causes, and recommend fixes with 95%+ confidence across the
+      UI5, Java, and C++ layers.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> defect-analyst</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Confidence</strong> 95%+ required</span>
+      <span class="chip"><strong>Output</strong> Defect report</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    This agent is an expert defect investigator. It helps developers — who may not have written the
+    code — understand defects, find root causes, and recommend fixes. Every claim cites a
+    file and line reference; the agent admits uncertainty rather than guessing.
+  </p>
+
+  <h2>Critical Rules</h2>
+  <ul>
+    <li>95%+ confidence required before recommending fixes.</li>
+    <li>Never search without a Module / BO scope — the codebase has 210,000+ files.</li>
+    <li>Every claim must cite <code>file:line</code> — no hallucinated references.</li>
+    <li>Maximum 2&ndash;3 question rounds before giving partial findings.</li>
+    <li>Auto-generate the report when confidence &ge; 95% and save to <code>defect_report/</code>.</li>
+    <li>15-minute maximum — a mandatory timeout that yields partial findings.</li>
+    <li>All questions asked via structured checkboxes/dropdowns, not plain text.</li>
+  </ul>
+
+  <h2>Investigation Workflow</h2>
+  <table>
+    <thead><tr><th>Phase</th><th>Activity</th></tr></thead>
+    <tbody>
+      <tr><td>1. Intake</td><td>Parse input, show a summary, ask only for missing info.</td></tr>
+      <tr><td>1.5 Severity &amp; Priority</td><td>Assess defect severity and priority (including performance scales).</td></tr>
+      <tr><td>2. False-defect screening</td><td>Five-point checklist before deep investigation.</td></tr>
+      <tr><td>3. Scoped investigation</td><td>Search with include patterns, read files, trace data flow.</td></tr>
+      <tr><td>4. Verification checkpoint</td><td>Self-audit; auto-proceed at &ge; 95%, else ask gap questions.</td></tr>
+      <tr><td>5. Fix recommendations</td><td>Specific file:line changes with cross-impact analysis.</td></tr>
+      <tr><td>6. Similar-issue scan</td><td>PR-scoped pattern scan and batch-fix offer.</td></tr>
+      <tr><td>7. Auto-save report</td><td>Save to <code>defect_report/{DefectID}.md</code> and offer next actions.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Severity Levels</h2>
+  <table>
+    <thead><tr><th>Level</th><th>Criteria</th></tr></thead>
+    <tbody>
+      <tr><td>Critical</td><td>Complete failure of critical functionality with no workaround.</td></tr>
+      <tr><td>High</td><td>Major failure, but a workaround exists.</td></tr>
+      <tr><td>Medium</td><td>Incorrect, incomplete, or inconsistent results; usability impaired.</td></tr>
+      <tr><td>Low</td><td>Cosmetic or trivial; no functional/data impact.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout success">
+    <p class="title">Cross-Layer Investigation</p>
+    <p>The agent investigates one layer at a time (UI5, Java, or C++), completing the user-identified layer first before asking to move to the next — keeping searches scoped and precise.</p>
+  </div>
+
+  <footer><p>CTO Custom Agents Documentation &middot; Defect Analyst Agent</p></footer>
+</main>
+</body>
+</html>

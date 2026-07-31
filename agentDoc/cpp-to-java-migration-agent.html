@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>C++ to Java Migration Agent — CTO Custom Agents</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="badge">CTO</span>Custom Agents</a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" href="index.html">&larr; All agents</a>
+
+  <section class="hero">
+    <p class="eyebrow">Migration Agent</p>
+    <h1>C++ to Java Migration Agent</h1>
+    <p class="lead">
+      Converts business logic from a C++ MFC-based desktop application into a Java web application
+      following FlowStage, Service, Controller, and BO architectural patterns.
+    </p>
+    <div class="chips">
+      <span class="chip"><strong>ID</strong> CPP to Java Migration</span>
+      <span class="chip"><strong>Model</strong> auto</span>
+      <span class="chip"><strong>Mode</strong> Expert / Architect</span>
+      <span class="chip"><strong>Tools</strong> editFiles, search, read, agent</span>
+    </div>
+  </section>
+
+  <h2>Description</h2>
+  <p>
+    In expert mode the agent behaves like a senior architect: it performs deep logic analysis,
+    refactors C++ code before translation, maps components intelligently, validates completeness,
+    and produces architecture-compliant Java. Its primary focus is migrating validation and
+    calculation logic while adhering to the target Java project's architectural patterns.
+  </p>
+
+  <h2>Migration Workflow</h2>
+  <ol>
+    <li><strong>Expert reasoning</strong> — Understand intent, classify logic (validation, calculation, transformation, event, DB), and detect hidden dependencies and side effects.</li>
+    <li><strong>Pre-refactoring</strong> — Split oversized functions, normalize conditions/loops, extract reusable computations, and replace pointer operations with clean equivalents.</li>
+    <li><strong>C++ logic extraction</strong> — Extract validation/calculation logic, control-flow paths, inputs, outputs, and referenced fields.</li>
+    <li><strong>Architecture mapping</strong> — Map C++ patterns to Java components using established migration patterns.</li>
+    <li><strong>Java code generation</strong> — Produce FlowStage, Service, BO, and Controller code from templates.</li>
+    <li><strong>Post-migration validation</strong> — Compare every C++ branch with the Java result to ensure no logic path is missed.</li>
+    <li><strong>Migration logging</strong> — Record each step and method status for resumable, incremental migration.</li>
+  </ol>
+
+  <h2>Architecture Mapping</h2>
+  <table>
+    <thead><tr><th>C++ pattern</th><th>Java component</th></tr></thead>
+    <tbody>
+      <tr><td>Validation steps</td><td>FlowStage subclass with <code>checkAndRespond()</code></td></tr>
+      <tr><td>Calculations</td><td>Service-layer method</td></tr>
+      <tr><td>Entity updates</td><td>BO implementation methods</td></tr>
+      <tr><td>UI-triggered logic</td><td>Controller methods</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Smart BO Creation Flow</h2>
+  <p>When invoked as part of the Smart BO Creation pipeline, the agent:</p>
+  <ol>
+    <li>Extracts validation, calculation, and business logic from the C++ codebase.</li>
+    <li>Generates a structured <strong>MigrationContext JSON</strong> (validation rules, calculation methods, business rules, field mappings, client validations, enum mappings, and child-table logic).</li>
+    <li>Automatically hands off to the Java Agent to generate Java BO files incorporating the extracted logic.</li>
+  </ol>
+
+  <div class="callout">
+    <p class="title">Pipeline Continuity</p>
+    <p>The agent does not stop after generating the MigrationContext — the pipeline continues to the Java Agent, and onward to the UI5 Coding Agent.</p>
+  </div>
+
+  <h2>Final Response Requirements</h2>
+  <ul>
+    <li>Final migrated Java code</li>
+    <li>Refactored C++ interpretation</li>
+    <li>Logic comparison table (C++ vs Java)</li>
+    <li>Architecture mapping summary</li>
+    <li>Manual review notes</li>
+    <li>Migration log update</li>
+  </ul>
+
+  <footer><p>CTO Custom Agents Documentation &middot; C++ to Java Migration Agent</p></footer>
+</main>
+</body>
+</html>
