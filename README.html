@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation for SAP Business One Custom AI Agents - 12 specialized agents for code generation, testing, migration, and debugging">
+    <title>SAP Business One Custom Agents - Documentation</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #004080;
+            --accent-color: #ff6600;
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --code-bg: #f5f5f5;
+            --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+        }
+
+        h4 {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin: 20px 0 10px;
+        }
+
+        .intro {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .agent-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .agent-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .agent-card h4 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .agent-number {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .purpose {
+            background-color: #e8f4f8;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .capabilities {
+            margin: 15px 0;
+        }
+
+        .capabilities ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+
+        .capabilities li {
+            margin: 8px 0;
+            padding-left: 10px;
+        }
+
+        .example {
+            background-color: var(--code-bg);
+            border-left: 3px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .workflow-box {
+            background: linear-gradient(to right, #f8f9fa, #e8f4f8);
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .workflow-step {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .workflow-step strong {
+            color: var(--primary-color);
+        }
+
+        .resource-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .resource-link:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .note-box {
+            background-color: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 5px;
+        }
+
+        .cat-development {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .cat-testing {
+            background-color: #f3e5f5;
+            color: #6a1b9a;
+        }
+
+        .cat-quality {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+
+        .cat-documentation {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #3498db;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 5px 0;
+            }
+
+            .agent-card {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--card-shadow);
+            transition: background-color 0.3s;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .scroll-top:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 SAP Business One Custom Agents</h1>
+            <p>12 specialized AI agents for accelerating development across the full technology stack</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#development">Development</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#quality">Code Quality</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#quickstart">Quick Start</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>📖 Overview</h2>
+            <div class="intro">
+                <p>This repository contains <strong>12 specialized AI agents</strong> designed to accelerate SAP Business One development across the full technology stack. These agents integrate with GitHub Copilot in VS Code, IntelliJ IDEA, and Visual Studio, providing intelligent assistance for code generation, testing, migration, documentation, and debugging.</p>
+                <p style="margin-top: 15px;">Each agent is a domain-specific expert that understands SAP Business One architecture, coding patterns, and business logic across <strong>UI5, Java/Spring Boot, and C++</strong> layers.</p>
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="../web/index.html" class="resource-link">📚 Full Documentation Portal</a>
+                <a href="https://github.com/your-org/custom-agents" class="resource-link">💻 Repository</a>
+            </div>
+        </section>
+
+        <!-- Development Agents -->
+        <section id="development">
+            <h2>🛠️ Development Agents</h2>
+            <span class="category-badge cat-development">Development</span>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">1</span> JavaAgent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Specialized assistant for SAP Business One WebClient Java development
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Creates Business Objects (BOs) from database tables</li>
+                        <li>Generates Spring Boot service layer code</li>
+                        <li>Implements FlowStage validation patterns</li>
+                        <li>Supports Smart BO creation pipeline with C++ to Java migration</li>
+                        <li>Generates DAO, Service, and Controller layers</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Create BO for table: ODOC<br>
+                    Feature: Invoice Management<br>
+                    Mode: FULL
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">2</span> UI5 Coding Agent <span class="badge">Pipeline</span></h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> UI5 frontend development specialist for SAP Business One WebClient
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Generates UI5 views, controllers, and fragments following SAP Business One patterns</li>
+                        <li>Creates API endpoint bindings and client-side validations</li>
+                        <li>Implements custom widgets and controls</li>
+                        <li>Supports Smart BO Creation pipeline (receives JavaBoContext from JavaAgent)</li>
+                        <li>Generates complete UI5 stack: API services, detail views, fragments, i18n files</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Create UI5 frontend for BO: Invoice<br>
+                    Feature: Invoice Management<br>
+                    Include: Detail view, General tab fragment, API service
+                </div>
+                <div class="note-box" style="margin-top: 15px;">
+                    <strong>Handoff Support:</strong> Automatically receives <code>JavaBoContext</code> from JavaAgent in Smart BO pipeline
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">3</span> CPP to Java Migration Agent <span class="badge">Migration</span></h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Migrates business logic from C++ MFC desktop application to Java web application
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Extracts validation and calculation logic from C++ codebase</li>
+                        <li>Maps C++ patterns to Java FlowStage, Service, Controller, and BO components</li>
+                        <li>Pre-refactors C++ code before translation</li>
+                        <li>Generates MigrationContext JSON for Smart BO creation</li>
+                        <li>Converts pointer operations, control flow, and MFC patterns to Java equivalents</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Extract logic for BO: Invoice<br>
+                    From C++ file: PA4101.c<br>
+                    Generate MigrationContext for JavaAgent
+                </div>
+                <div class="note-box" style="margin-top: 15px;">
+                    <strong>Handoff Support:</strong> Automatically hands off to JavaAgent with MigrationContext
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">4</span> CppRefactor</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Bi-directional C++ PA (Presentation) to PO (Presentation Object) refactoring
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Extracts business logic from PA layer to PO layer (removes UI dependencies)</li>
+                        <li>Wraps PO logic into PA layer with UI scaffolding (reverse direction)</li>
+                        <li>Converts grid and data access operations between layers</li>
+                        <li>Preserves calculations and validations while removing PFORM, GRID, ITEM calls</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Refactor PA → PO: PA4101.c<br>
+                    Extract all business logic<br>
+                    Remove UI dependencies
+                </div>
+            </div>
+        </section>
+
+        <!-- Testing Agents -->
+        <section id="testing">
+            <h2>🧪 Testing Agents</h2>
+            <span class="category-badge cat-testing">Testing</span>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">5</span> Java Test Generator</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Generates comprehensive Spock/Groovy test cases for Spring Boot Java services
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Creates complete Spock test suites with full method coverage</li>
+                        <li>Analyzes service code for dependencies, branches, and edge cases</li>
+                        <li>Validates tests via logical trace-through with random inputs</li>
+                        <li>Produces verification reports with pass/fail status</li>
+                        <li>Follows SAP Business One test patterns and mock strategies</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Generate test suite for: InvoiceService.java<br>
+                    Type: NEW<br>
+                    Full coverage: every method, every branch, edge cases
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">6</span> UI5 Test Cases Agent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Generates QUnit test cases for UI5 components and widgets
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Creates QUnit tests for custom widgets extending BaseControlWidget</li>
+                        <li>Tests controllers, fragments, and custom controls</li>
+                        <li>Generates memory leak and performance tests</li>
+                        <li>Tests SDK environment integration and OData binding</li>
+                        <li>Follows project-specific QUnit patterns</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Generate tests for acme.apps.player.widget.AdvancedInput<br>
+                    Scope: unit + integration
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">7</span> E2E Test Case Agent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Creates end-to-end test cases spanning entire epics
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Analyzes user story test cases to create epic-level E2E tests</li>
+                        <li>Generates happy path, alternate flows, and edge case scenarios</li>
+                        <li>Produces JIRA Zephyr-formatted test case documents (.docx)</li>
+                        <li>Maps business flow across multiple user stories</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Create E2E tests for epic: PROJ-90000<br>
+                    Folder: /test_cases/user_stories/<br>
+                    Paths: ALL (happy path + alternate flows + edge cases)
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Quality Agents -->
+        <section id="quality">
+            <h2>✅ Code Quality & Debugging Agents</h2>
+            <span class="category-badge cat-quality">Code Quality</span>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">8</span> Code Review Agent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Full-stack code review for SAP Business One applications
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Reviews UI5, Java, C++, and QUnit code for quality and standards</li>
+                        <li>Checks security vulnerabilities and performance issues</li>
+                        <li>Validates directory structure and architectural compliance</li>
+                        <li>Produces detailed review reports with fix recommendations</li>
+                        <li>Supports whole-file, function-scoped, and PR-level reviews</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Review: InvoiceService.java<br>
+                    Scope: Whole file<br>
+                    Check: structure, correctness, security, performance
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">9</span> Defect Analyst</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Root cause analysis and fix recommendations for defects
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Investigates bugs across UI5, Java, and C++ layers</li>
+                        <li>Finds root cause with 95%+ confidence before recommending fixes</li>
+                        <li>Works from QA/UAT/production reports or stack traces</li>
+                        <li>Generates defect analysis reports with file:line references</li>
+                        <li>Offers interactive fix selection and application</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Defect: BUG-12345<br>
+                    Module: Invoice Management<br>
+                    Expected: Invoice total calculates correctly<br>
+                    Actual: Total is incorrect when tax exemption is applied
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Agents -->
+        <section id="documentation">
+            <h2>📝 Documentation Agents</h2>
+            <span class="category-badge cat-documentation">Documentation</span>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">10</span> AskAgent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Intelligent Q&A agent for project documentation and architecture
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Answers questions about module functionality and architecture</li>
+                        <li>Explains component relationships and data flows</li>
+                        <li>Grounds answers in project documentation (module docs, business analysis docs)</li>
+                        <li>Works across multiple SAP Business One projects</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Project: CoreApp<br>
+                    What is the architecture of the Invoice Management module?
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">11</span> Module Level Documentation Agent</h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Generates comprehensive module-level documentation by analyzing codebases
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Extracts core and supporting Business Objects (BOs)</li>
+                        <li>Documents data flow, functional flow, and database schema</li>
+                        <li>Creates validation reports with coverage analysis</li>
+                        <li>Produces detailed markdown documentation with diagrams</li>
+                        <li>Supports C++, Java, JavaScript, UI5, Python, SQL</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Generate documentation for module: Invoice Management<br>
+                    Languages: Java, UI5, SQL<br>
+                    Output: reports_module/
+                </div>
+            </div>
+
+            <div class="agent-card">
+                <h4><span class="agent-number">12</span> Epic DeepSearch <span class="badge">Autonomous</span></h4>
+                <div class="purpose">
+                    <strong>Purpose:</strong> Deep knowledge-base search and user story generation for epics
+                </div>
+                <div class="capabilities">
+                    <strong>Key Capabilities:</strong>
+                    <ul>
+                        <li>Searches Second Brain knowledge base for feature information</li>
+                        <li>Extracts business logic, database tables, dependencies from pre-analyzed artifacts</li>
+                        <li>Maps desktop C++/MFC patterns to web UI5 + Spring Boot architecture</li>
+                        <li>Generates HLD, LLD, BRD documents with web implementation blueprints</li>
+                        <li>Creates JIRA-ready user stories with visual design specs and i18n specifications</li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <strong>Example Usage:</strong><br>
+                    Create user stories for landed cost feature
+                </div>
+                <div class="note-box" style="margin-top: 15px;">
+                    <strong>Fully Autonomous:</strong> Runs all stages (search → extract → map → document → generate stories) from a single prompt
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>🗂️ Agent Categories</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Agents</th>
+                        <th>Use Cases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="category-badge cat-development">Development</span></td>
+                        <td>JavaAgent, UI5 Coding, CPP to Java Migration, CppRefactor</td>
+                        <td>Code generation, BO creation, migration, refactoring</td>
+                    </tr>
+                    <tr>
+                        <td><span class="category-badge cat-testing">Testing</span></td>
+                        <td>Java Test Generator, UI5 Test Cases, E2E Test Case</td>
+                        <td>Unit tests, integration tests, end-to-end test scenarios</td>
+                    </tr>
+                    <tr>
+                        <td><span class="category-badge cat-quality">Code Quality</span></td>
+                        <td>Code Review, Defect Analyst</td>
+                        <td>Code reviews, bug analysis, security audits</td>
+                    </tr>
+                    <tr>
+                        <td><span class="category-badge cat-documentation">Documentation</span></td>
+                        <td>AskAgent, Module Documentation, Epic DeepSearch</td>
+                        <td>Q&A, module docs, user stories, design documents</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Quick Start Section -->
+        <section id="quickstart">
+            <h2>🚀 Quick Start</h2>
+
+            <h3>Prerequisites</h3>
+            <ul style="margin-left: 30px;">
+                <li>GitHub Copilot subscription</li>
+                <li>One of the following IDEs:
+                    <ul>
+                        <li><strong>VS Code</strong> (recommended) - with GitHub Copilot extension</li>
+                        <li><strong>IntelliJ IDEA</strong> - with GitHub Copilot plugin</li>
+                        <li><strong>Visual Studio</strong> - with GitHub Copilot extension</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Setup Steps</h3>
+            <ol style="margin-left: 30px;">
+                <li><strong>Clone the repository</strong> containing these agents</li>
+                <li><strong>Open the workspace</strong> in your IDE</li>
+                <li><strong>Invoke an agent</strong> using GitHub Copilot Chat:
+                    <div class="example" style="margin-top: 10px;">
+                        <strong>In VS Code:</strong><br>
+                        @workspace /mode &lt;agent-name&gt;
+                    </div>
+                    <div class="example">
+                        <strong>In IntelliJ:</strong><br>
+                        Switch to agent mode via Copilot settings
+                    </div>
+                </li>
+                <li><strong>Provide context</strong> and let the agent assist you</li>
+            </ol>
+
+            <h3>Example Workflow: Smart BO Creation Pipeline</h3>
+            <div class="workflow-box">
+                <p style="margin-bottom: 15px;">This is a powerful multi-agent workflow that creates a complete feature from C++ business logic:</p>
+
+                <div class="workflow-step">
+                    <strong>1. User Prompt:</strong><br>
+                    "Create Smart BO for Invoice Management from PA4101.c"
+                </div>
+
+                <div class="workflow-step">
+                    <strong>2. CPP to Java Migration Agent:</strong>
+                    <ul>
+                        <li>Extracts business logic from C++</li>
+                        <li>Generates MigrationContext JSON</li>
+                        <li>Auto-hands off to JavaAgent →</li>
+                    </ul>
+                </div>
+
+                <div class="workflow-step">
+                    <strong>3. JavaAgent:</strong>
+                    <ul>
+                        <li>Creates Java BO, Service, FlowStage classes</li>
+                        <li>Generates JavaBoContext</li>
+                        <li>Auto-hands off to UI5 Coding Agent →</li>
+                    </ul>
+                </div>
+
+                <div class="workflow-step">
+                    <strong>4. UI5 Coding Agent:</strong>
+                    <ul>
+                        <li>Creates complete UI5 frontend</li>
+                        <li>Generates views, controllers, API services, i18n files</li>
+                        <li>Pipeline complete! ✓</li>
+                    </ul>
+                </div>
+
+                <div class="note-box" style="margin-top: 15px;">
+                    <strong>Result:</strong> Complete feature implementation across all layers from a single prompt.
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>📚 Reference Documentation</h2>
+            <p>Each agent references instruction files in the <code>.github/instructions/</code> folder:</p>
+
+            <ul style="margin-left: 30px; margin-top: 15px;">
+                <li><strong>Java Patterns:</strong> Java.instruction.md, SpringBoot.instruction.md, JavaBoPatterns.instruction.md</li>
+                <li><strong>UI5 Patterns:</strong> UI5_PATTERNS.instruction.md, UI5_TESTING.instruction.md</li>
+                <li><strong>C++ Patterns:</strong> CPP.instruction.md, Cpp_Refactor_Patterns.instruction.md</li>
+                <li><strong>Migration Patterns:</strong> JavaMigrationPatterns.instruction.md, Cpp_to_java_migration.instruction.md</li>
+                <li><strong>Testing Patterns:</strong> QUINT.instruction.md, Java_test.instruction.md, E2ETestCase.instruction.md</li>
+                <li><strong>Other:</strong> defect.instruction.md, Module_Level_Documentation.instruction.md</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">🔗 Additional Resources</h3>
+            <div style="margin-top: 20px;">
+                <a href="../web/index.html" class="resource-link">Documentation Portal</a>
+                <a href="../web/agents.json" class="resource-link">Agent Catalog JSON</a>
+                <a href="https://github.com/your-org/custom-agents" class="resource-link">GitHub Repository</a>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section>
+            <h2>📝 Notes</h2>
+            <ul style="margin-left: 30px;">
+                <li>All agents use the <code>.agent.md</code> format recognized by GitHub Copilot</li>
+                <li>Agents can hand off to each other for complex workflows</li>
+                <li>Each agent has specific tools and capabilities defined in its YAML frontmatter</li>
+                <li>Some agents support interactive questions via <code>vscode_askQuestions</code> tool</li>
+                <li>Agents are designed to work with the specific SAP Business One codebase structure</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>These agents are maintained by the development team.</p>
+            <p>For questions, issues, or feature requests, please contact the team or open an issue in the <a href="https://github.com/your-org/custom-agents">repository</a>.</p>
+            <p style="margin-top: 15px; opacity: 0.8;">Last Updated: 2026-07-31</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top" title="Back to top">↑</a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Show/hide scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.style.display = 'flex';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.color = '#ff6600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
